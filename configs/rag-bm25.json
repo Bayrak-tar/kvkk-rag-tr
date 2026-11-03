@@ -1,0 +1,19 @@
+{
+  "top_k": 5,
+  "embedding_config": "configs/embedding.json",
+  "vector_store_config": "configs/vector_store.json",
+  "generation_config": "configs/generation.json",
+  "chunking_config": "configs/chunking.json",
+  "corpus_path": "data/processed/legal_units.jsonl",
+  "bm25_index_path": "data/processed/bm25_chunks.jsonl",
+  "retrieval": {
+    "strategy": "bm25",
+    "candidate_k": 20,
+    "bm25_k1": 1.5,
+    "bm25_b": 0.75,
+    "reranker": {
+      "enabled": false,
+      "model_name": "BAAI/bge-reranker-v2-m3"
+    }
+  }
+}

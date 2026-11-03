@@ -1,0 +1,97 @@
+[
+  {
+    "id": "kvkk-6698",
+    "name": "Kişisel Verilerin Korunması Kanunu",
+    "law_name": "6698 sayılı Kişisel Verilerin Korunması Kanunu",
+    "url": "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5",
+    "publisher": "T.C. Mevzuat Bilgi Sistemi",
+    "format": "html"
+  },
+  {
+    "id": "kvkk-yurtdisi-aktarim-yonetmeligi",
+    "name": "Kişisel Verilerin Yurt Dışına Aktarılmasına İlişkin Usul ve Esaslar Hakkında Yönetmelik",
+    "law_name": "Kişisel Verilerin Yurt Dışına Aktarılmasına İlişkin Usul ve Esaslar Hakkında Yönetmelik",
+    "url": "https://www.resmigazete.gov.tr/eskiler/2024/07/20240710-2.htm",
+    "publisher": "T.C. Resmî Gazete",
+    "format": "html"
+  },
+  {
+    "id": "kvkk-silme-yonetmeligi",
+    "name": "Kişisel Verilerin Silinmesi, Yok Edilmesi veya Anonim Hale Getirilmesi Hakkında Yönetmelik",
+    "law_name": "Kişisel Verilerin Silinmesi, Yok Edilmesi veya Anonim Hale Getirilmesi Hakkında Yönetmelik",
+    "url": "https://www.kvkk.gov.tr/Icerik/5441/KISISEL-VERILERIN-SILINMESI-YOK-EDILMESI-VEYA-ANONIM-HALE-GETIRILMESI-HAKKINDA-YONETMELIK",
+    "publisher": "Kişisel Verileri Koruma Kurumu",
+    "format": "html"
+  },
+  {
+    "id": "kvkk-verbis-yonetmeligi",
+    "name": "Veri Sorumluları Sicili Hakkında Yönetmelik",
+    "law_name": "Veri Sorumluları Sicili Hakkında Yönetmelik",
+    "url": "https://www.kvkk.gov.tr/Icerik/5442/VERI-SORUMLULARI-SICILI-HAKKINDA-YONETMELIK",
+    "publisher": "Kişisel Verileri Koruma Kurumu",
+    "format": "html"
+  },
+  {
+    "id": "kvkk-rehber-aydinlatma",
+    "name": "Aydınlatma Yükümlülüğü",
+    "law_name": "KVKK Kurumu: Aydınlatma Yükümlülüğü",
+    "url": "https://www.kvkk.gov.tr/Icerik/2033/Aydinlatma-Yukumlulugu-",
+    "publisher": "Kişisel Verileri Koruma Kurumu",
+    "format": "html",
+    "document_type": "guidance"
+  },
+  {
+    "id": "kvkk-rehber-veri-guvenligi",
+    "name": "Veri Güvenliğine İlişkin Yükümlülükler",
+    "law_name": "KVKK Kurumu: Veri Güvenliğine İlişkin Yükümlülükler",
+    "url": "https://www.kvkk.gov.tr/Icerik/2040/Veri-Guvenligine-Iliskin-Yukumlulukler",
+    "publisher": "Kişisel Verileri Koruma Kurumu",
+    "format": "html",
+    "document_type": "guidance"
+  },
+  {
+    "id": "kvkk-rehber-ozel-nitelikli-veriler",
+    "name": "Özel Nitelikli Kişisel Veriler",
+    "law_name": "KVKK Kurumu: Özel Nitelikli Kişisel Veriler",
+    "url": "https://www.kvkk.gov.tr/Icerik/2051/Ozel-Nitelikli-Kisisel-Veriler",
+    "publisher": "Kişisel Verileri Koruma Kurumu",
+    "format": "html",
+    "document_type": "guidance"
+  },
+  {
+    "id": "kvkk-rehber-yurt-disi-aktarim",
+    "name": "Yurt Dışına Aktarım",
+    "law_name": "KVKK Kurumu: Yurt Dışına Aktarım",
+    "url": "https://www.kvkk.gov.tr/Icerik/2053/Yurtdisina-Aktarim",
+    "publisher": "Kişisel Verileri Koruma Kurumu",
+    "format": "html",
+    "document_type": "guidance"
+  },
+  {
+    "id": "kvkk-rehber-ilgili-kisi-haklari",
+    "name": "İlgili Kişinin Hakları",
+    "law_name": "KVKK Kurumu: İlgili Kişinin Hakları",
+    "url": "https://www.kvkk.gov.tr/Icerik/2036/Ilgili-Kisinin-Haklari",
+    "publisher": "Kişisel Verileri Koruma Kurumu",
+    "format": "html",
+    "document_type": "guidance"
+  },
+  {
+    "id": "kvkk-rehber-basvuru-cevaplama",
+    "name": "İlgili Kişi Başvurularının Cevaplanması",
+    "law_name": "KVKK Kurumu: İlgili Kişi Başvurularının Cevaplanması",
+    "url": "https://www.kvkk.gov.tr/Icerik/2046/Ilgili-Kisiler-Tarafindan-Yapilan-Basvurularin-Cevaplanmasi-Yukumlulugu",
+    "publisher": "Kişisel Verileri Koruma Kurumu",
+    "format": "html",
+    "document_type": "guidance"
+  },
+  {
+    "id": "kvkk-rehber-acik-riza",
+    "name": "Açık Rıza Alırken Dikkat Edilecek Hususlar",
+    "law_name": "KVKK Kurumu: Açık Rıza Alırken Dikkat Edilecek Hususlar",
+    "url": "https://www.kvkk.gov.tr/Icerik/2037/Acik-Riza-Alirken-Dikkat-Edilecek-Hususlar",
+    "publisher": "Kişisel Verileri Koruma Kurumu",
+    "format": "html",
+    "document_type": "guidance"
+  }
+]

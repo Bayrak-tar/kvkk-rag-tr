@@ -1,0 +1,15 @@
+{"id":"OOD-001","question":"Besiktas futbol takimi kac kez Turkiye ligi sampiyonu oldu?","expected_abstain":true,"status":"draft","category":"spor"}
+{"id":"OOD-002","question":"Istanbulda yarin hava yagmurlu olacak mi?","expected_abstain":true,"status":"draft","category":"hava durumu"}
+{"id":"OOD-003","question":"Python'da bir listeyi alfabetik siraya nasil dizerim?","expected_abstain":true,"status":"draft","category":"programlama"}
+{"id":"OOD-004","question":"Turkiye'nin baskenti neresidir?","expected_abstain":true,"status":"draft","category":"genel bilgi"}
+{"id":"OOD-005","question":"Kadikoy'de iyi bir kahvalti mekani onerir misin?","expected_abstain":true,"status":"draft","category":"yerel oneriler"}
+{"id":"OOD-006","question":"Marsta insan yasayabilir mi?","expected_abstain":true,"status":"draft","category":"bilim"}
+{"id":"OOD-007","question":"Gelir vergisi borcumu nasil taksitlendirebilirim?","expected_abstain":true,"status":"draft","category":"diger mevzuat"}
+{"id":"OOD-008","question":"Bugunku dolar kuru kac TL?","expected_abstain":true,"status":"draft","category":"guncel bilgi"}
+{"id":"OOD-009","question":"Bir roman icin kisa bir polisiye hikaye yazar misin?","expected_abstain":true,"status":"draft","category":"yaratici yazim"}
+{"id":"OOD-010","question":"Turkiye milli takimi bir sonraki macini ne zaman oynuyor?","expected_abstain":true,"status":"draft","category":"guncel spor"}
+{"id":"OOD-011","question":"Ilgili kisinin 6698 sayili Kanun kapsamindaki haklari nelerdir?","expected_abstain":false,"status":"draft","category":"in-domain haklar"}
+{"id":"OOD-012","question":"Kisisel veriler hangi sartlarda yurt disina aktarilabilir?","expected_abstain":false,"status":"draft","category":"in-domain aktarim"}
+{"id":"OOD-013","question":"Veri sorumlusu kisisel veri ihlalini kime bildirmelidir?","expected_abstain":false,"status":"draft","category":"in-domain veri guvenligi"}
+{"id":"OOD-014","question":"Kisisel verilerin silinmesi veya yok edilmesi ne zaman gerekir?","expected_abstain":false,"status":"draft","category":"in-domain silme"}
+{"id":"OOD-015","question":"Aydinlatma yukumlulugunde ilgili kisiye hangi bilgiler verilir?","expected_abstain":false,"status":"draft","category":"in-domain aydinlatma"}

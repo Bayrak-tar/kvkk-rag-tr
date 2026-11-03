@@ -1,0 +1,1 @@
+"""Gradio kullanıcı arayüzü."""

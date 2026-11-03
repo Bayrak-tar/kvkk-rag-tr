@@ -1,0 +1,6 @@
+{
+  "model_name": "intfloat/multilingual-e5-base",
+  "device": "cpu",
+  "batch_size": 16,
+  "normalize_embeddings": true
+}

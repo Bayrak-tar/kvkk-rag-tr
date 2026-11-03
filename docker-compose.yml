@@ -1,0 +1,36 @@
+services:
+  api:
+    build: .
+    command: ["uvicorn", "src.api.app:app", "--host", "0.0.0.0", "--port", "8001"]
+    environment:
+      KVKK_RAG_CONFIG: configs/rag.json
+      OLLAMA_BASE_URL: http://host.docker.internal:11434
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./data:/app/data
+      - huggingface-cache:/root/.cache/huggingface
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8001/health', timeout=3)"]
+      interval: 20s
+      timeout: 5s
+      retries: 5
+
+  ui:
+    build: .
+    command: ["python", "-m", "src.ui.app"]
+    environment:
+      KVKK_API_URL: http://api:8001/ask
+      GRADIO_SERVER_NAME: 0.0.0.0
+      GRADIO_SERVER_PORT: 7861
+    depends_on:
+      api:
+        condition: service_healthy
+    ports:
+      - "7861:7861"
+
+volumes:
+  huggingface-cache:

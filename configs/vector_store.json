@@ -1,0 +1,7 @@
+{
+  "provider": "chroma",
+  "path": "data/chroma",
+  "collection": "kvkk_legal_texts",
+  "collection_template": "kvkk_{model_slug}",
+  "distance": "cosine"
+}

@@ -1,0 +1,23 @@
+{
+  "top_k": 4,
+  "embedding_config": "configs/embedding.json",
+  "vector_store_config": "configs/vector_store.json",
+  "generation_config": "configs/generation.json",
+  "chunking_config": "configs/chunking.json",
+  "corpus_path": "data/processed/legal_units.jsonl",
+  "bm25_index_path": "data/processed/bm25_chunks.jsonl",
+  "citation_verification": {
+    "enabled": true
+  },
+  "retrieval": {
+    "strategy": "hybrid",
+    "candidate_k": 16,
+    "rrf_k": 60,
+    "bm25_k1": 1.5,
+    "bm25_b": 0.75,
+    "reranker": {
+      "enabled": false,
+      "model_name": "BAAI/bge-reranker-v2-m3"
+    }
+  }
+}

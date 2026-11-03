@@ -1,0 +1,1 @@
+﻿question_id,experiment_id,question,reference_answer,gold_article_ids,retrieved_article_ids,answer,latency_ms,citations,verification_status,correctness_1_to_5,completeness_1_to_5,faithfulness_1_to_5,citation_support_1_to_5,abstention_expected,abstention_correct,error_category,severity,reviewer,reviewed_at,notes\n

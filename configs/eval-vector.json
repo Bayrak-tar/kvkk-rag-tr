@@ -1,0 +1,13 @@
+{
+  "experiment_id": "vector-e5-article",
+  "rag_config": "configs/rag.json",
+  "questions_path": "eval/questions/kvkk_seed.jsonl",
+  "statuses": ["validated"],
+  "ks": [1, 3, 5],
+  "retrieval_overrides": {
+    "strategy": "vector",
+    "reranker": {"enabled": false}
+  },
+  "run_generation": false,
+  "output_dir": "results"
+}

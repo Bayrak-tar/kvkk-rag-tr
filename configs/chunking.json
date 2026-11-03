@@ -1,0 +1,14 @@
+{
+  "strategy": "article",
+  "fixed": {
+    "chunk_size": 1200,
+    "overlap": 150
+  },
+  "article": {
+    "max_chars": 5000
+  },
+  "semantic": {
+    "threshold": 0.35,
+    "max_chars": 4000
+  }
+}

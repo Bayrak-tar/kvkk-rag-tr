@@ -1,0 +1,7 @@
+{
+  "experiment_id": "abstention-pilot-qwen3",
+  "rag_config": "configs/rag.json",
+  "questions_path": "eval/questions/abstention_seed.jsonl",
+  "statuses": ["draft"],
+  "output_dir": "results/abstention"
+}

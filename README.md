@@ -123,9 +123,8 @@ Embedding modelini karşılaştırmak için aynı retrieval ayarıyla `configs/r
 
 ### Demo görüntüsü
 
-![Gerçek demo ekran görüntüsü eklenmeyi bekliyor; bu görsel açıkça placeholder olarak işaretlidir.](docs/images/demo-pending.svg)
+![KVKK RAG arayüzünde örnek soru, yanıt ve mevzuat dayanakları.](docs/images/demo-pending.png)
 
-Bu kaynak snapshot'ında çalışan RAG indeksi bulunmadığı ve Gradio paketi kurulu olmadığı için gerçek uygulamadan ekran görüntüsü alınmadı. İlk yerel demo başlatıldığında `http://127.0.0.1:7861` sayfasının gerçek ekran görüntüsünü `docs/images/demo.png` olarak kaydedip bu placeholder görselini değiştirin.
 
 ## Türkçe'de arama neden zor?
 

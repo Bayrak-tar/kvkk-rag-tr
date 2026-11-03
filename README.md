@@ -47,7 +47,7 @@ flowchart LR
     M --> N[LLM kaynak destek denetimi]
     N --> O[FastAPI /ask]
     O --> P[Gradio UI]
-    I --> Q[Recall@k, MRR@k, nDCG@k]
+    I --> Q["Recall at k; MRR; nDCG"]
     K --> R[Atıf kapsama heuristic'i]
     N --> S[Kaynak destek denetimi]
     Q --> T[CSV / JSON deney sonuçları]

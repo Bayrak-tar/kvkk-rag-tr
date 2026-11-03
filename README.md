@@ -6,16 +6,16 @@ Türkçe KVKK ve ilişkili mevzuat metinlerinde kaynak gösteren soru-cevap içi
 
 ## Proje durumu
 
-- Kaynak manifestinde 4 mevzuat metnine ek olarak KVKK Kurumunun 7 resmî konu sayfası listelenir. Yeni sayfalar yerel corpus ve indeks yeniden üretildiğinde aramaya katılır; ayrıntılar [docs/data-sources.md](docs/data-sources.md) içindedir.
+- Kaynak manifestinde 4 mevzuat metnine ek olarak KVKK Kurumunun 7 resmî konu sayfası listelenir. Yeni sayfalar yerel corpus ve indeks yeniden üretildiğinde aramaya katılır; kaynak adresleri `configs/sources.json` içindedir.
 - Sabit boyut, madde bazlı ve embedding benzerliğine dayanan chunking stratejileri config'ten seçilebilir.
 - Embedding seçenekleri `intfloat/multilingual-e5-base` ve `BAAI/bge-m3`; retrieval seçenekleri vektör, BM25 ve RRF hibrittir. CrossEncoder reranking isteğe bağlıdır.
 - Varsayılan RAG ayarı vektör ve BM25 sıralamalarını RRF ile birleştirir. Yanıt üretildikten sonra kullanılan atıf etiketleri süzülür ve etkin ayarda aynı LLM, iddiaları gösterilen mevzuat parçalarına göre ikinci kez denetler.
 - [82 soruluk değerlendirme seti](eval/questions/kvkk_seed.jsonl) henüz `draft`; hiçbir gold etiket uzman doğrulamasından geçmedi.
 - Retrieval pilotu aynı 82 taslak soruda çalıştırıldı; sonuçlar yalnızca keşif amaçlıdır.
 
-Kamuya açık resmî KVKK konu sayfaları ile gecikme ayarları ve yeniden indeksleme adımları [docs/scope-latency.md](docs/scope-latency.md) dosyasında açıklanmıştır. `/ask` yanıtı `latency_ms` alanında API süresini bildirir.
+Gecikme ve yeniden indeksleme ayarları config dosyalarında bulunur. `/ask` yanıtı `latency_ms` alanında API süresini bildirir.
 
-Yanıtları insan anotasyonuyla puanlama ve kapsam dışı sorularda reddetme deneyini çalıştırma adımları [docs/evaluation-review.md](docs/evaluation-review.md) dosyasındadır. Taslak deneyler kalite sonucu sayılmaz.
+Yanıt inceleme şablonu `eval/answer_review_template.csv` içindedir; taslak deneyler kalite sonucu sayılmaz.
 
 ## Mimari
 
@@ -55,7 +55,7 @@ flowchart LR
     S --> T
 ```
 
-Kaynak: [mimari ve veri akış notları](docs/architecture.md). Varsayılan akış hibrit aramadır. Yanıtta kullanılan etiketler kaynak listesine eşlenir; etkin kaynak denetimi, iddiaları aynı kaynak metinlerine karşı ikinci bir LLM çağrısıyla kontrol eder ve denetim geçmezse kaynak kartlarını göstermeyip yanıt vermekten kaçınır.
+Varsayılan akış hibrit aramadır. Yanıtta kullanılan etiketler kaynak listesine eşlenir; etkin kaynak denetimi, iddiaları aynı kaynak metinlerine karşı ikinci bir LLM çağrısıyla kontrol eder ve denetim geçmezse kaynak kartlarını göstermeyip yanıt vermekten kaçınır.
 
 ## Kurulum ve yerel çalıştırma
 

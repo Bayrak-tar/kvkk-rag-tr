@@ -1,0 +1,2673 @@
+{
+  "metadata": {
+    "experiment_id": "pilot-draft-hybrid-e5-article",
+    "created_at_utc": "2026-11-03T12:57:14.720278+00:00",
+    "question_count": 82,
+    "question_statuses": [
+      "draft"
+    ],
+    "evaluation_validity": "preliminary_unreviewed",
+    "question_set_sha256": "dc0e3a73961cd36512550ae933f78bb1bd7642332e20947366a317dae50948db",
+    "rag_config_sha256": "48b1aa163fff1bc472f8a1601ed2ffbf51a8c31c5468fd42a3f2db6d442fc351",
+    "corpus_sha256": "fcd2ce656d14f2d2b066a2649409c06ebf25e6945c4b38af68e55db8155875a4",
+    "retrieval_strategy": "hybrid",
+    "embedding_model": "intfloat/multilingual-e5-base",
+    "chunking_strategy": "article",
+    "reranker": {
+      "enabled": false,
+      "model_name": "BAAI/bge-reranker-v2-m3"
+    },
+    "run_generation": false,
+    "citation_verification": true,
+    "ks": [
+      1,
+      3,
+      5
+    ]
+  },
+  "aggregate_metrics": {
+    "recall@1": 0.4024390243902439,
+    "mrr@1": 0.4024390243902439,
+    "ndcg@1": 0.4024390243902439,
+    "recall@3": 0.6382113821138211,
+    "mrr@3": 0.5142276422764227,
+    "ndcg@3": 0.5442572983044667,
+    "recall@5": 0.7601626016260163,
+    "mrr@5": 0.5416666666666666,
+    "ndcg@5": 0.5941066498476335
+  },
+  "per_question": [
+    {
+      "question_id": "KVKK-001",
+      "question": "6698 sayılı Kanun hangi temel amacı gerçekleştirmek için çıkarılmıştır?",
+      "reference_answer": "Kanun, kişisel verilerin işlenmesinde başta özel hayatın gizliliği olmak üzere temel hak ve özgürlükleri korumayı ve kişisel veri işleyenlerin yükümlülüklerini düzenlemeyi amaçlar.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "kapsam ve amaç",
+      "gold_article_ids": [
+        "kvkk-6698:1"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-yurtdisi-aktarim-yonetmeligi:1",
+        "kvkk-verbis-yonetmeligi:1",
+        "kvkk-rehber-acik-riza:Bölüm 4",
+        "kvkk-6698:1",
+        "kvkk-verbis-yonetmeligi:3"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 0.0,
+      "mrr@3": 0.0,
+      "ndcg@3": 0.0,
+      "recall@5": 1.0,
+      "mrr@5": 0.25,
+      "ndcg@5": 0.43067655807339306
+    },
+    {
+      "question_id": "KVKK-002",
+      "question": "Kanun hangi kişilere ve hangi tür veri işleme yöntemlerine uygulanır?",
+      "reference_answer": "Kanun, kişisel verileri işlenen gerçek kişileri ve verileri tamamen veya kısmen otomatik yollarla ya da veri kayıt sisteminin parçası olmak kaydıyla otomatik olmayan yollarla işleyen gerçek veya tüzel kişileri kapsar.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "kapsam ve amaç",
+      "gold_article_ids": [
+        "kvkk-6698:2"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-6698:2",
+        "kvkk-6698:10",
+        "kvkk-rehber-veri-guvenligi:Bölüm 5",
+        "kvkk-rehber-aydinlatma:Bölüm 5",
+        "kvkk-6698:28"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 1.0,
+      "mrr@1": 1.0,
+      "ndcg@1": 1.0,
+      "recall@3": 1.0,
+      "mrr@3": 1.0,
+      "ndcg@3": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@5": 1.0
+    },
+    {
+      "question_id": "KVKK-003",
+      "question": "Kanundaki kişisel veri tanımı nedir?",
+      "reference_answer": "Kişisel veri, kimliği belirli veya belirlenebilir gerçek kişiye ilişkin her türlü bilgidir.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "tanımlar",
+      "gold_article_ids": [
+        "kvkk-6698:3"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-rehber-aydinlatma:Bölüm 5",
+        "kvkk-silme-yonetmeligi:5",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:5",
+        "kvkk-silme-yonetmeligi:4",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:4"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 0.0,
+      "mrr@3": 0.0,
+      "ndcg@3": 0.0,
+      "recall@5": 0.0,
+      "mrr@5": 0.0,
+      "ndcg@5": 0.0
+    },
+    {
+      "question_id": "KVKK-004",
+      "question": "Veri sorumlusu ile veri işleyen arasındaki temel fark nedir?",
+      "reference_answer": "Veri sorumlusu işleme amaç ve vasıtalarını belirler, kayıt sisteminin kurulması ve yönetiminden sorumludur. Veri işleyen, veri sorumlusunun yetkisine dayanarak onun adına işlem yapar.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "tanımlar",
+      "gold_article_ids": [
+        "kvkk-6698:3"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-yurtdisi-aktarim-yonetmeligi:7",
+        "kvkk-6698:12",
+        "kvkk-rehber-veri-guvenligi:Bölüm 5",
+        "kvkk-6698:16",
+        "kvkk-rehber-veri-guvenligi:Bölüm 4"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 0.0,
+      "mrr@3": 0.0,
+      "ndcg@3": 0.0,
+      "recall@5": 0.0,
+      "mrr@5": 0.0,
+      "ndcg@5": 0.0
+    },
+    {
+      "question_id": "KVKK-005",
+      "question": "Açık rıza Kanunda nasıl tanımlanır?",
+      "reference_answer": "Açık rıza, belirli bir konuya ilişkin, bilgilendirilmeye dayanan ve özgür iradeyle açıklanan rızadır.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5",
+        "https://www.kvkk.gov.tr/Icerik/2037/Acik-Riza-Alirken-Dikkat-Edilecek-Hususlar"
+      ],
+      "category": "tanımlar ve açık rıza",
+      "gold_article_ids": [
+        "kvkk-6698:3"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-rehber-acik-riza:Bölüm 4",
+        "kvkk-rehber-acik-riza:Bölüm 1",
+        "kvkk-rehber-acik-riza:Bölüm 3",
+        "kvkk-rehber-yurt-disi-aktarim:Bölüm 2",
+        "kvkk-rehber-ozel-nitelikli-veriler:Bölüm 2"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 0.0,
+      "mrr@3": 0.0,
+      "ndcg@3": 0.0,
+      "recall@5": 0.0,
+      "mrr@5": 0.0,
+      "ndcg@5": 0.0
+    },
+    {
+      "question_id": "KVKK-006",
+      "question": "Kişisel verilerin işlenmesi hangi tür işlemleri kapsar?",
+      "reference_answer": "Elde etme, kaydetme, depolama, muhafaza, değiştirme, açıklama, aktarma, sınıflandırma ve kullanımı engelleme dâhil kişisel veri üzerindeki işlemler işleme sayılır.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "tanımlar",
+      "gold_article_ids": [
+        "kvkk-6698:3"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-6698:10",
+        "kvkk-rehber-aydinlatma:Bölüm 3",
+        "kvkk-6698:11",
+        "kvkk-silme-yonetmeligi:6",
+        "kvkk-verbis-yonetmeligi:2"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 0.0,
+      "mrr@3": 0.0,
+      "ndcg@3": 0.0,
+      "recall@5": 0.0,
+      "mrr@5": 0.0,
+      "ndcg@5": 0.0
+    },
+    {
+      "question_id": "KVKK-007",
+      "question": "Kişisel verilerin işlenmesinde uyulması zorunlu temel ilkeler nelerdir?",
+      "reference_answer": "Veriler hukuka ve dürüstlük kurallarına uygun, doğru ve gerektiğinde güncel; belirli, açık ve meşru amaçlarla; amaçla bağlantılı, sınırlı ve ölçülü; gerekli süre kadar muhafaza edilerek işlenmelidir.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "genel ilkeler",
+      "gold_article_ids": [
+        "kvkk-6698:4"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-6698:4",
+        "kvkk-6698:5",
+        "kvkk-6698:1",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:5",
+        "kvkk-6698:6"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 1.0,
+      "mrr@1": 1.0,
+      "ndcg@1": 1.0,
+      "recall@3": 1.0,
+      "mrr@3": 1.0,
+      "ndcg@3": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@5": 1.0
+    },
+    {
+      "question_id": "KVKK-008",
+      "question": "Verilerin amaçla bağlantılı, sınırlı ve ölçülü işlenmesi ne anlama gelir?",
+      "reference_answer": "Veri işleme, belirli, açık ve meşru amaçlarla bağlantılı olmalı; amaç için gerekli olanla sınırlı ve ölçülü tutulmalıdır.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "genel ilkeler",
+      "gold_article_ids": [
+        "kvkk-6698:4"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-6698:4",
+        "kvkk-rehber-aydinlatma:Bölüm 3",
+        "kvkk-rehber-aydinlatma:Bölüm 4",
+        "kvkk-6698:10",
+        "kvkk-rehber-ozel-nitelikli-veriler:Bölüm 1"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 1.0,
+      "mrr@1": 1.0,
+      "ndcg@1": 1.0,
+      "recall@3": 1.0,
+      "mrr@3": 1.0,
+      "ndcg@3": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@5": 1.0
+    },
+    {
+      "question_id": "KVKK-009",
+      "question": "Kişisel veriler ne kadar süre saklanabilir?",
+      "reference_answer": "Veriler, ilgili mevzuatta öngörülen veya işlendikleri amaç için gerekli olan süre kadar muhafaza edilmelidir.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "genel ilkeler",
+      "gold_article_ids": [
+        "kvkk-6698:4"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-6698:4",
+        "kvkk-silme-yonetmeligi:11",
+        "kvkk-6698:8",
+        "kvkk-6698:9",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:6"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 1.0,
+      "mrr@1": 1.0,
+      "ndcg@1": 1.0,
+      "recall@3": 1.0,
+      "mrr@3": 1.0,
+      "ndcg@3": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@5": 1.0
+    },
+    {
+      "question_id": "KVKK-010",
+      "question": "Açık rıza olmadan kişisel veri hangi şartlarda işlenebilir?",
+      "reference_answer": "Kanunlarda açıkça öngörülme, hayat veya beden bütünlüğünü korumak için zorunluluk, sözleşmenin kurulması veya ifasıyla doğrudan ilgili olma, hukuki yükümlülük, kişinin veriyi alenileştirmesi, bir hakkın tesisi/kullanılması/korunması ve temel haklara zarar vermeyen zorunlu meşru menfaat şartlarından biri varsa işleme mümkün olabilir.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "işleme şartları",
+      "gold_article_ids": [
+        "kvkk-6698:5"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-rehber-acik-riza:Bölüm 1",
+        "kvkk-6698:4",
+        "kvkk-rehber-acik-riza:Bölüm 3",
+        "kvkk-6698:5",
+        "kvkk-6698:8"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 0.0,
+      "mrr@3": 0.0,
+      "ndcg@3": 0.0,
+      "recall@5": 1.0,
+      "mrr@5": 0.25,
+      "ndcg@5": 0.43067655807339306
+    },
+    {
+      "question_id": "KVKK-011",
+      "question": "Bir sözleşmeyle bağlantılı kişisel veri işleme hangi koşulda açık rıza olmadan yapılabilir?",
+      "reference_answer": "İşleme, sözleşmenin kurulması veya ifasıyla doğrudan ilgili olmalı ve sözleşme taraflarına ait verilerin işlenmesi gerekli olmalıdır.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "işleme şartları",
+      "gold_article_ids": [
+        "kvkk-6698:5"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-rehber-acik-riza:Bölüm 1",
+        "kvkk-rehber-aydinlatma:Bölüm 5",
+        "kvkk-6698:5",
+        "kvkk-rehber-yurt-disi-aktarim:Bölüm 11",
+        "kvkk-rehber-acik-riza:Bölüm 3"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 1.0,
+      "mrr@3": 0.3333333333333333,
+      "ndcg@3": 0.5,
+      "recall@5": 1.0,
+      "mrr@5": 0.3333333333333333,
+      "ndcg@5": 0.5
+    },
+    {
+      "question_id": "KVKK-012",
+      "question": "Veri sorumlusunun meşru menfaati hangi sınırla veri işleme şartı olabilir?",
+      "reference_answer": "İşleme meşru menfaat için zorunlu olmalı ve ilgili kişinin temel hak ve özgürlüklerine zarar vermemelidir.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "işleme şartları",
+      "gold_article_ids": [
+        "kvkk-6698:5"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-verbis-yonetmeligi:15",
+        "kvkk-rehber-veri-guvenligi:Bölüm 5",
+        "kvkk-6698:5",
+        "kvkk-6698:10",
+        "kvkk-rehber-yurt-disi-aktarim:Bölüm 12"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 1.0,
+      "mrr@3": 0.3333333333333333,
+      "ndcg@3": 0.5,
+      "recall@5": 1.0,
+      "mrr@5": 0.3333333333333333,
+      "ndcg@5": 0.5
+    },
+    {
+      "question_id": "KVKK-013",
+      "question": "Kişinin kendisinin alenileştirdiği veriler açık rıza olmadan işlenebilir mi?",
+      "reference_answer": "Kişisel veri ilgili kişi tarafından alenileştirilmişse, Kanunun 5. maddesindeki şartlardan biri kapsamında açık rıza aranmaksızın işlenebilir.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "işleme şartları",
+      "gold_article_ids": [
+        "kvkk-6698:5"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-6698:5",
+        "kvkk-rehber-ozel-nitelikli-veriler:Bölüm 4",
+        "kvkk-6698:8",
+        "kvkk-6698:6",
+        "kvkk-6698:4"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 1.0,
+      "mrr@1": 1.0,
+      "ndcg@1": 1.0,
+      "recall@3": 1.0,
+      "mrr@3": 1.0,
+      "ndcg@3": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@5": 1.0
+    },
+    {
+      "question_id": "KVKK-014",
+      "question": "Hangi veri grupları özel nitelikli kişisel veri sayılır?",
+      "reference_answer": "Irk, etnik köken, siyasi düşünce, felsefi inanç, din ve diğer inançlar, kılık kıyafet, dernek/vakıf/sendika üyeliği, sağlık, cinsel hayat, ceza mahkûmiyeti ve güvenlik tedbirleri ile biyometrik ve genetik veriler özel niteliklidir.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "özel nitelikli veriler",
+      "gold_article_ids": [
+        "kvkk-6698:6"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-rehber-ozel-nitelikli-veriler:Bölüm 1",
+        "kvkk-rehber-yurt-disi-aktarim:Bölüm 9",
+        "kvkk-6698:16",
+        "kvkk-rehber-ozel-nitelikli-veriler:Bölüm 5",
+        "kvkk-6698:6"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 0.0,
+      "mrr@3": 0.0,
+      "ndcg@3": 0.0,
+      "recall@5": 1.0,
+      "mrr@5": 0.2,
+      "ndcg@5": 0.38685280723454163
+    },
+    {
+      "question_id": "KVKK-015",
+      "question": "Özel nitelikli kişisel verilerin işlenmesinde temel kural ve istisnalar nelerdir?",
+      "reference_answer": "Özel nitelikli verilerin işlenmesi kural olarak yasaktır; 6. maddenin 3. fıkrasında sayılan şartlardan biri varsa işlenebilir.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "özel nitelikli veriler",
+      "gold_article_ids": [
+        "kvkk-6698:6"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-rehber-ozel-nitelikli-veriler:Bölüm 1",
+        "kvkk-rehber-ozel-nitelikli-veriler:Bölüm 5",
+        "kvkk-6698:1",
+        "kvkk-6698:5",
+        "kvkk-6698:6"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 0.0,
+      "mrr@3": 0.0,
+      "ndcg@3": 0.0,
+      "recall@5": 1.0,
+      "mrr@5": 0.2,
+      "ndcg@5": 0.38685280723454163
+    },
+    {
+      "question_id": "KVKK-016",
+      "question": "Sağlık verileri hangi amaçlarla ve kimlerce işlenebilir?",
+      "reference_answer": "Sır saklama yükümlülüğü altındaki kişiler veya yetkili kurum ve kuruluşlar, kamu sağlığı, koruyucu hekimlik, teşhis, tedavi ve bakım ile sağlık hizmetlerinin planlanması, yönetimi ve finansmanı amaçları için gerekli olduğunda sağlık verilerini işleyebilir.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "özel nitelikli veriler",
+      "gold_article_ids": [
+        "kvkk-6698:6"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-6698:6",
+        "kvkk-rehber-aydinlatma:Bölüm 4",
+        "kvkk-rehber-ozel-nitelikli-veriler:Bölüm 5",
+        "kvkk-rehber-ozel-nitelikli-veriler:Bölüm 1",
+        "kvkk-rehber-aydinlatma:Bölüm 3"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 1.0,
+      "mrr@1": 1.0,
+      "ndcg@1": 1.0,
+      "recall@3": 1.0,
+      "mrr@3": 1.0,
+      "ndcg@3": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@5": 1.0
+    },
+    {
+      "question_id": "KVKK-017",
+      "question": "Özel nitelikli veri işlenirken ayrıca hangi güvenlik yükümlülüğü vardır?",
+      "reference_answer": "Kurul tarafından belirlenen yeterli önlemlerin ayrıca alınması gerekir.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "özel nitelikli veriler",
+      "gold_article_ids": [
+        "kvkk-6698:6"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-rehber-ozel-nitelikli-veriler:Bölüm 5",
+        "kvkk-rehber-ozel-nitelikli-veriler:Bölüm 1",
+        "kvkk-6698:5",
+        "kvkk-6698:6",
+        "kvkk-rehber-veri-guvenligi:Bölüm 4"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 0.0,
+      "mrr@3": 0.0,
+      "ndcg@3": 0.0,
+      "recall@5": 1.0,
+      "mrr@5": 0.25,
+      "ndcg@5": 0.43067655807339306
+    },
+    {
+      "question_id": "KVKK-018",
+      "question": "İşleme sebebi ortadan kalkınca veri sorumlusu veriler için ne yapmalıdır?",
+      "reference_answer": "İşleme sebebi ortadan kalkarsa kişisel veriler, veri sorumlusu tarafından resen veya ilgili kişinin talebi üzerine silinir, yok edilir ya da anonim hâle getirilir.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5",
+        "https://www.kvkk.gov.tr/Icerik/5441/KISISEL-VERILERIN-SILINMESI-YOK-EDILMESI-VEYA-ANONIM-HALE-GETIRILMESI-HAKKINDA-YONETMELIK"
+      ],
+      "category": "silme ve imha",
+      "gold_article_ids": [
+        "kvkk-6698:7"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-silme-yonetmeligi:12",
+        "kvkk-verbis-yonetmeligi:14",
+        "kvkk-verbis-yonetmeligi:15",
+        "kvkk-6698:7",
+        "kvkk-rehber-aydinlatma:Bölüm 5"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 0.0,
+      "mrr@3": 0.0,
+      "ndcg@3": 0.0,
+      "recall@5": 1.0,
+      "mrr@5": 0.25,
+      "ndcg@5": 0.43067655807339306
+    },
+    {
+      "question_id": "KVKK-019",
+      "question": "Silme, yok etme ve anonim hâle getirme işlemleri kimin talebiyle yapılabilir?",
+      "reference_answer": "İşleme sebebi ortadan kalktığında veri sorumlusu işlemi kendiliğinden veya ilgili kişinin talebi üzerine yapar.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "silme ve imha",
+      "gold_article_ids": [
+        "kvkk-6698:7"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-silme-yonetmeligi:7",
+        "kvkk-6698:7",
+        "kvkk-silme-yonetmeligi:11",
+        "kvkk-silme-yonetmeligi:10",
+        "kvkk-silme-yonetmeligi:5"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 1.0,
+      "mrr@3": 0.5,
+      "ndcg@3": 0.6309297535714575,
+      "recall@5": 1.0,
+      "mrr@5": 0.5,
+      "ndcg@5": 0.6309297535714575
+    },
+    {
+      "question_id": "KVKK-020",
+      "question": "Yurt içindeki üçüncü kişilere kişisel veri aktarımında açık rıza dışında hangi dayanaklar kullanılabilir?",
+      "reference_answer": "8. madde, 5. maddenin 2. fıkrasındaki işleme şartlarından biri veya yeterli önlemlerle 6. maddenin 3. fıkrasındaki şartlardan biri varsa açık rıza olmadan aktarım yapılmasına imkân verir.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "yurt içi aktarım",
+      "gold_article_ids": [
+        "kvkk-6698:8",
+        "kvkk-6698:5",
+        "kvkk-6698:6"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-rehber-ilgili-kisi-haklari:Bölüm 5",
+        "kvkk-6698:8",
+        "kvkk-rehber-yurt-disi-aktarim:Bölüm 12",
+        "kvkk-rehber-acik-riza:Bölüm 1",
+        "kvkk-6698:11"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 0.3333333333333333,
+      "mrr@3": 0.5,
+      "ndcg@3": 0.2960819109658652,
+      "recall@5": 0.3333333333333333,
+      "mrr@5": 0.5,
+      "ndcg@5": 0.2960819109658652
+    },
+    {
+      "question_id": "KVKK-021",
+      "question": "Yurt dışına kişisel veri aktarımında yeterlilik kararı varsa hangi koşullar aranır?",
+      "reference_answer": "5. veya 6. maddede bir işleme şartı bulunmalı ve aktarım yapılacak ülke, ülke içindeki sektör ya da uluslararası kuruluş hakkında yeterlilik kararı bulunmalıdır.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5",
+        "https://www.resmigazete.gov.tr/eskiler/2024/07/20240710-2.htm"
+      ],
+      "category": "yurt dışına aktarım",
+      "gold_article_ids": [
+        "kvkk-6698:9"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-yurtdisi-aktarim-yonetmeligi:6",
+        "kvkk-rehber-yurt-disi-aktarim:Bölüm 3",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:8",
+        "kvkk-6698:9",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:7"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 0.0,
+      "mrr@3": 0.0,
+      "ndcg@3": 0.0,
+      "recall@5": 1.0,
+      "mrr@5": 0.25,
+      "ndcg@5": 0.43067655807339306
+    },
+    {
+      "question_id": "KVKK-022",
+      "question": "Yeterlilik kararını hangi makam verir ve ne sıklıkta değerlendirir?",
+      "reference_answer": "Yeterlilik kararını Kurul verir; karar en geç dört yılda bir değerlendirilir.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "yurt dışına aktarım",
+      "gold_article_ids": [
+        "kvkk-6698:9"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-rehber-yurt-disi-aktarim:Bölüm 4",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:9",
+        "kvkk-rehber-yurt-disi-aktarim:Bölüm 3",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:8",
+        "kvkk-6698:9"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 0.0,
+      "mrr@3": 0.0,
+      "ndcg@3": 0.0,
+      "recall@5": 1.0,
+      "mrr@5": 0.2,
+      "ndcg@5": 0.38685280723454163
+    },
+    {
+      "question_id": "KVKK-023",
+      "question": "Yeterlilik kararı yoksa yurt dışına düzenli aktarım için hangi uygun güvenceler kullanılabilir?",
+      "reference_answer": "Kanunda uluslararası anlaşma niteliğinde olmayan kamu anlaşması, Kurul onaylı bağlayıcı şirket kuralları, Kurulun ilan ettiği standart sözleşme veya Kurul izniyle yeterli koruma taahhütnamesi uygun güvence seçenekleri arasında sayılır.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5",
+        "https://www.resmigazete.gov.tr/eskiler/2024/07/20240710-2.htm"
+      ],
+      "category": "yurt dışına aktarım",
+      "gold_article_ids": [
+        "kvkk-6698:9"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-rehber-yurt-disi-aktarim:Bölüm 6",
+        "kvkk-rehber-yurt-disi-aktarim:Bölüm 3",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:6",
+        "kvkk-rehber-yurt-disi-aktarim:Bölüm 12",
+        "kvkk-6698:9"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 0.0,
+      "mrr@3": 0.0,
+      "ndcg@3": 0.0,
+      "recall@5": 1.0,
+      "mrr@5": 0.2,
+      "ndcg@5": 0.38685280723454163
+    },
+    {
+      "question_id": "KVKK-024",
+      "question": "Standart sözleşme imzalandıktan sonra Kuruma ne zaman bildirilmelidir?",
+      "reference_answer": "Standart sözleşme imzalanmasından itibaren beş iş günü içinde veri sorumlusu veya veri işleyen tarafından Kuruma bildirilir.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5",
+        "https://www.resmigazete.gov.tr/eskiler/2024/07/20240710-2.htm"
+      ],
+      "category": "yurt dışına aktarım",
+      "gold_article_ids": [
+        "kvkk-6698:9"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-yurtdisi-aktarim-yonetmeligi:14",
+        "kvkk-rehber-yurt-disi-aktarim:Bölüm 9",
+        "kvkk-verbis-yonetmeligi:13",
+        "kvkk-rehber-yurt-disi-aktarim:Bölüm 1",
+        "kvkk-verbis-yonetmeligi:14"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 0.0,
+      "mrr@3": 0.0,
+      "ndcg@3": 0.0,
+      "recall@5": 0.0,
+      "mrr@5": 0.0,
+      "ndcg@5": 0.0
+    },
+    {
+      "question_id": "KVKK-025",
+      "question": "Yeterlilik kararı veya uygun güvence yoksa arızi yurt dışı aktarımı hangi şartla yapılabilir?",
+      "reference_answer": "Yeterlilik kararı ve uygun güvence yoksa, aktarım ancak arızi olmak kaydıyla 9. maddenin 6. fıkrasında sayılan istisnalardan birinin bulunması hâlinde yapılabilir.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "yurt dışına aktarım",
+      "gold_article_ids": [
+        "kvkk-6698:9"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-yurtdisi-aktarim-yonetmeligi:6",
+        "kvkk-rehber-yurt-disi-aktarim:Bölüm 3",
+        "kvkk-rehber-yurt-disi-aktarim:Bölüm 12",
+        "kvkk-rehber-yurt-disi-aktarim:Bölüm 11",
+        "kvkk-rehber-yurt-disi-aktarim:Bölüm 6"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 0.0,
+      "mrr@3": 0.0,
+      "ndcg@3": 0.0,
+      "recall@5": 0.0,
+      "mrr@5": 0.0,
+      "ndcg@5": 0.0
+    },
+    {
+      "question_id": "KVKK-026",
+      "question": "Veri elde edilirken ilgili kişiye hangi temel bilgiler verilmelidir?",
+      "reference_answer": "Veri sorumlusunun kimliği, işleme amacı, aktarım yapılabilecek kişiler ve amaçları, toplama yöntemi ve hukuki sebep ile ilgili kişinin 11. maddedeki hakları açıklanmalıdır.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5",
+        "https://www.kvkk.gov.tr/Icerik/2033/Aydinlatma-Yukumlulugu-"
+      ],
+      "category": "aydınlatma",
+      "gold_article_ids": [
+        "kvkk-6698:10"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-6698:10",
+        "kvkk-verbis-yonetmeligi:9",
+        "kvkk-rehber-aydinlatma:Bölüm 4",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:4",
+        "kvkk-6698:3"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 1.0,
+      "mrr@1": 1.0,
+      "ndcg@1": 1.0,
+      "recall@3": 1.0,
+      "mrr@3": 1.0,
+      "ndcg@3": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@5": 1.0
+    },
+    {
+      "question_id": "KVKK-027",
+      "question": "Veri işleme açık rızaya dayanmasa bile aydınlatma yapılmalı mıdır?",
+      "reference_answer": "Evet. KVKK Kurumunun açıklamasına göre aydınlatma yükümlülüğü, işleme açık rızaya veya kanundaki başka bir işleme şartına dayansa da devam eder.",
+      "source_urls": [
+        "https://www.kvkk.gov.tr/Icerik/2033/Aydinlatma-Yukumlulugu-"
+      ],
+      "category": "aydınlatma",
+      "gold_article_ids": [
+        "kvkk-6698:10"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-rehber-aydinlatma:Bölüm 5",
+        "kvkk-rehber-acik-riza:Bölüm 3",
+        "kvkk-rehber-acik-riza:Bölüm 1",
+        "kvkk-rehber-aydinlatma:Bölüm 1",
+        "kvkk-verbis-yonetmeligi:5"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 0.0,
+      "mrr@3": 0.0,
+      "ndcg@3": 0.0,
+      "recall@5": 0.0,
+      "mrr@5": 0.0,
+      "ndcg@5": 0.0
+    },
+    {
+      "question_id": "KVKK-028",
+      "question": "İlgili kişi veri sorumlusuna başvurarak hangi konularda bilgi isteyebilir?",
+      "reference_answer": "Kişi, verisinin işlenip işlenmediğini, işlenmişse buna ilişkin bilgiyi, işleme amacını ve amaca uygun kullanımı ile yurt içi veya yurt dışı aktarım yapılan üçüncü kişileri öğrenebilir.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "ilgili kişi hakları",
+      "gold_article_ids": [
+        "kvkk-6698:11"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-6698:10",
+        "kvkk-6698:11",
+        "kvkk-rehber-ilgili-kisi-haklari:Bölüm 1",
+        "kvkk-rehber-aydinlatma:Bölüm 1",
+        "kvkk-silme-yonetmeligi:12"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 1.0,
+      "mrr@3": 0.5,
+      "ndcg@3": 0.6309297535714575,
+      "recall@5": 1.0,
+      "mrr@5": 0.5,
+      "ndcg@5": 0.6309297535714575
+    },
+    {
+      "question_id": "KVKK-029",
+      "question": "Yanlış veya eksik işlenen kişisel veriler için ilgili kişi ne talep edebilir?",
+      "reference_answer": "İlgili kişi, eksik veya yanlış işlenen kişisel verilerin düzeltilmesini isteyebilir; yapılan düzeltmenin aktarılan üçüncü kişilere bildirilmesini de talep edebilir.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "ilgili kişi hakları",
+      "gold_article_ids": [
+        "kvkk-6698:11"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-rehber-ilgili-kisi-haklari:Bölüm 6",
+        "kvkk-6698:11",
+        "kvkk-silme-yonetmeligi:12",
+        "kvkk-6698:5",
+        "kvkk-6698:10"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 1.0,
+      "mrr@3": 0.5,
+      "ndcg@3": 0.6309297535714575,
+      "recall@5": 1.0,
+      "mrr@5": 0.5,
+      "ndcg@5": 0.6309297535714575
+    },
+    {
+      "question_id": "KVKK-030",
+      "question": "Otomatik sistemlerin analizinden kaynaklanan aleyhe sonuca karşı itiraz hakkı var mıdır?",
+      "reference_answer": "Evet. İlgili kişi, verilerin münhasıran otomatik sistemlerle analiz edilmesi sonucu aleyhine bir sonuç ortaya çıkmasına itiraz edebilir.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "ilgili kişi hakları",
+      "gold_article_ids": [
+        "kvkk-6698:11"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-rehber-ilgili-kisi-haklari:Bölüm 7",
+        "kvkk-6698:11",
+        "kvkk-6698:14",
+        "kvkk-rehber-acik-riza:Bölüm 3",
+        "kvkk-6698:28"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 1.0,
+      "mrr@3": 0.5,
+      "ndcg@3": 0.6309297535714575,
+      "recall@5": 1.0,
+      "mrr@5": 0.5,
+      "ndcg@5": 0.6309297535714575
+    },
+    {
+      "question_id": "KVKK-031",
+      "question": "Veri sorumlusu kişisel verilerin güvenliği için hangi temel tedbirleri almalıdır?",
+      "reference_answer": "Hukuka aykırı işlemeyi ve erişimi önlemek, verilerin muhafazasını sağlamak için uygun güvenlik düzeyini sağlayan gerekli teknik ve idari tedbirleri almalıdır.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "veri güvenliği",
+      "gold_article_ids": [
+        "kvkk-6698:12"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-rehber-veri-guvenligi:Bölüm 4",
+        "kvkk-6698:10",
+        "kvkk-silme-yonetmeligi:8",
+        "kvkk-rehber-veri-guvenligi:Bölüm 7",
+        "kvkk-6698:12"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 0.0,
+      "mrr@3": 0.0,
+      "ndcg@3": 0.0,
+      "recall@5": 1.0,
+      "mrr@5": 0.2,
+      "ndcg@5": 0.38685280723454163
+    },
+    {
+      "question_id": "KVKK-032",
+      "question": "Veri işleme veri sorumlusu adına başka bir kuruluş tarafından yapılıyorsa tedbirlerden kim sorumludur?",
+      "reference_answer": "Veri sorumlusu, kendi adına işlem yapan veri işleyenle birlikte veri güvenliği tedbirlerinin alınması hususunda müştereken sorumludur.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "veri güvenliği",
+      "gold_article_ids": [
+        "kvkk-6698:12"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-rehber-veri-guvenligi:Bölüm 4",
+        "kvkk-6698:12",
+        "kvkk-rehber-veri-guvenligi:Bölüm 5",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:7",
+        "kvkk-6698:3"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 1.0,
+      "mrr@3": 0.5,
+      "ndcg@3": 0.6309297535714575,
+      "recall@5": 1.0,
+      "mrr@5": 0.5,
+      "ndcg@5": 0.6309297535714575
+    },
+    {
+      "question_id": "KVKK-033",
+      "question": "Kişisel veriler kanuni olmayan yollarla elde edilirse veri sorumlusu kimi bilgilendirmelidir?",
+      "reference_answer": "Veri sorumlusu, durumu en kısa sürede ilgili kişiye ve Kurula bildirir. Kurul gerekli görürse duyuru yapabilir.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "veri güvenliği",
+      "gold_article_ids": [
+        "kvkk-6698:12"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-6698:12",
+        "kvkk-6698:10",
+        "kvkk-rehber-veri-guvenligi:Bölüm 5",
+        "kvkk-rehber-aydinlatma:Bölüm 1",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:5"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 1.0,
+      "mrr@1": 1.0,
+      "ndcg@1": 1.0,
+      "recall@3": 1.0,
+      "mrr@3": 1.0,
+      "ndcg@3": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@5": 1.0
+    },
+    {
+      "question_id": "KVKK-034",
+      "question": "İlgili kişi KVKK kapsamındaki taleplerini ilk olarak kime iletir?",
+      "reference_answer": "İlgili kişi taleplerini yazılı olarak veya Kurulun belirleyeceği diğer yöntemlerle veri sorumlusuna iletir.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "başvuru ve şikâyet",
+      "gold_article_ids": [
+        "kvkk-6698:13"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-6698:13",
+        "kvkk-verbis-yonetmeligi:12",
+        "kvkk-rehber-basvuru-cevaplama:Bölüm 1",
+        "kvkk-rehber-ilgili-kisi-haklari:Bölüm 1",
+        "kvkk-silme-yonetmeligi:12"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 1.0,
+      "mrr@1": 1.0,
+      "ndcg@1": 1.0,
+      "recall@3": 1.0,
+      "mrr@3": 1.0,
+      "ndcg@3": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@5": 1.0
+    },
+    {
+      "question_id": "KVKK-035",
+      "question": "Veri sorumlusu ilgili kişinin başvurusunu en geç ne zaman sonuçlandırmalıdır?",
+      "reference_answer": "Veri sorumlusu başvuruyu en kısa sürede ve en geç otuz gün içinde ücretsiz sonuçlandırır; ayrıca maliyet doğarsa Kurul tarifesindeki ücret alınabilir.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "başvuru ve şikâyet",
+      "gold_article_ids": [
+        "kvkk-6698:13"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-rehber-basvuru-cevaplama:Bölüm 1",
+        "kvkk-6698:13",
+        "kvkk-silme-yonetmeligi:12",
+        "kvkk-verbis-yonetmeligi:10",
+        "kvkk-verbis-yonetmeligi:8"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 1.0,
+      "mrr@3": 0.5,
+      "ndcg@3": 0.6309297535714575,
+      "recall@5": 1.0,
+      "mrr@5": 0.5,
+      "ndcg@5": 0.6309297535714575
+    },
+    {
+      "question_id": "KVKK-036",
+      "question": "Veri sorumlusunun cevabı yetersizse veya cevap gelmezse Kurula şikâyet süresi nedir?",
+      "reference_answer": "İlgili kişi, cevabı öğrendiği tarihten itibaren otuz gün ve her hâlde veri sorumlusuna başvuru tarihinden itibaren altmış gün içinde Kurula şikâyette bulunabilir. Önce veri sorumlusuna başvuru yolu tüketilmelidir.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "başvuru ve şikâyet",
+      "gold_article_ids": [
+        "kvkk-6698:14"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-6698:14",
+        "kvkk-rehber-basvuru-cevaplama:Bölüm 1",
+        "kvkk-6698:15",
+        "kvkk-6698:12",
+        "kvkk-verbis-yonetmeligi:16"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 1.0,
+      "mrr@1": 1.0,
+      "ndcg@1": 1.0,
+      "recall@3": 1.0,
+      "mrr@3": 1.0,
+      "ndcg@3": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@5": 1.0
+    },
+    {
+      "question_id": "KVKK-037",
+      "question": "Kurul incelemesinde veri sorumlusu istenen bilgi ve belgeleri ne kadar sürede göndermelidir?",
+      "reference_answer": "Devlet sırrı niteliğindeki bilgi ve belgeler hariç, veri sorumlusu istenen bilgi ve belgeleri on beş gün içinde göndermeli ve gerektiğinde yerinde incelemeye imkân sağlamalıdır.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "Kurul incelemesi",
+      "gold_article_ids": [
+        "kvkk-6698:15"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-6698:15",
+        "kvkk-6698:12",
+        "kvkk-rehber-veri-guvenligi:Bölüm 5",
+        "kvkk-6698:13",
+        "kvkk-rehber-basvuru-cevaplama:Bölüm 1"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 1.0,
+      "mrr@1": 1.0,
+      "ndcg@1": 1.0,
+      "recall@3": 1.0,
+      "mrr@3": 1.0,
+      "ndcg@3": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@5": 1.0
+    },
+    {
+      "question_id": "KVKK-038",
+      "question": "Veri Sorumluları Sicili kamuya açık mıdır ve kim tarafından tutulur?",
+      "reference_answer": "Sicil, Kurulun gözetiminde Başkanlık tarafından kamuya açık olarak tutulur.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5",
+        "https://www.kvkk.gov.tr/Icerik/5442/VERI-SORUMLULARI-SICILI-HAKKINDA-YONETMELIK"
+      ],
+      "category": "VERBİS",
+      "gold_article_ids": [
+        "kvkk-6698:16"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-6698:16",
+        "kvkk-verbis-yonetmeligi:1",
+        "kvkk-6698:12",
+        "kvkk-verbis-yonetmeligi:5",
+        "kvkk-verbis-yonetmeligi:7"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 1.0,
+      "mrr@1": 1.0,
+      "ndcg@1": 1.0,
+      "recall@3": 1.0,
+      "mrr@3": 1.0,
+      "ndcg@3": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@5": 1.0
+    },
+    {
+      "question_id": "KVKK-039",
+      "question": "Veri sorumluları Sicile ne zaman kaydolmalıdır ve istisna tanınabilir mi?",
+      "reference_answer": "Kişisel veri işleyen gerçek ve tüzel kişiler veri işlemeye başlamadan önce Sicile kaydolur; Kurul objektif kriterlere göre kayıt zorunluluğuna istisna getirebilir.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5",
+        "https://www.kvkk.gov.tr/Icerik/5442/VERI-SORUMLULARI-SICILI-HAKKINDA-YONETMELIK"
+      ],
+      "category": "VERBİS",
+      "gold_article_ids": [
+        "kvkk-6698:16"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-verbis-yonetmeligi:8",
+        "kvkk-6698:16",
+        "kvkk-verbis-yonetmeligi:5",
+        "kvkk-verbis-yonetmeligi:7",
+        "kvkk-verbis-yonetmeligi:9"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 1.0,
+      "mrr@3": 0.5,
+      "ndcg@3": 0.6309297535714575,
+      "recall@5": 1.0,
+      "mrr@5": 0.5,
+      "ndcg@5": 0.6309297535714575
+    },
+    {
+      "question_id": "KVKK-040",
+      "question": "Kurul kararına uyulmaması veya aydınlatma yükümlülüğünün ihlali hangi idari yaptırım maddesinde düzenlenir?",
+      "reference_answer": "Kanunun 18. maddesi, aydınlatma ve veri güvenliği yükümlülükleri ile Kurul kararları ve Sicil yükümlülüklerine aykırılık için idari para cezalarını düzenler.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "yaptırımlar",
+      "gold_article_ids": [
+        "kvkk-6698:18"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-rehber-aydinlatma:Bölüm 1",
+        "kvkk-6698:18",
+        "kvkk-rehber-aydinlatma:Bölüm 5",
+        "kvkk-6698:9",
+        "kvkk-verbis-yonetmeligi:5"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 1.0,
+      "mrr@3": 0.5,
+      "ndcg@3": 0.6309297535714575,
+      "recall@5": 1.0,
+      "mrr@5": 0.5,
+      "ndcg@5": 0.6309297535714575
+    },
+    {
+      "question_id": "KVKK-041",
+      "question": "Ki?isel Verileri Koruma Kurumu hangi idari ve mali niteliklere sahip olarak kurulmu?tur?",
+      "reference_answer": "Bu Kanunla verilen görevleri yerine getirmek üzere, idari ve mali özerkliğe sahip ve kamu tüzel kişiliğini haiz Kişisel Verileri Koruma Kurumu kurulmuştur.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "Kurumun yap?s?",
+      "gold_article_ids": [
+        "kvkk-6698:19"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-6698:19",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:19",
+        "kvkk-6698:18",
+        "kvkk-verbis-yonetmeligi:20",
+        "kvkk-verbis-yonetmeligi:4"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 1.0,
+      "mrr@1": 1.0,
+      "ndcg@1": 1.0,
+      "recall@3": 1.0,
+      "mrr@3": 1.0,
+      "ndcg@3": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@5": 1.0
+    },
+    {
+      "question_id": "KVKK-042",
+      "question": "Ki?isel Verileri Koruma Kurumu hangi makamla ili?kilidir?",
+      "reference_answer": "Kurum Cumhurbaşkanının görevlendireceği bakan ile ilişkilidir.[2]",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "Kurumun yap?s?",
+      "gold_article_ids": [
+        "kvkk-6698:19"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-6698:19",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:19",
+        "kvkk-6698:26",
+        "kvkk-verbis-yonetmeligi:4",
+        "kvkk-6698:3"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 1.0,
+      "mrr@1": 1.0,
+      "ndcg@1": 1.0,
+      "recall@3": 1.0,
+      "mrr@3": 1.0,
+      "ndcg@3": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@5": 1.0
+    },
+    {
+      "question_id": "KVKK-043",
+      "question": "Ki?isel Verileri Koruma Kurumunun merkezi nerededir?",
+      "reference_answer": "Kurumun merkezi Ankara’dadır.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "Kurumun yap?s?",
+      "gold_article_ids": [
+        "kvkk-6698:19"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-6698:19",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:19",
+        "kvkk-6698:26",
+        "kvkk-rehber-veri-guvenligi:Bölüm 6",
+        "kvkk-6698:3"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 1.0,
+      "mrr@1": 1.0,
+      "ndcg@1": 1.0,
+      "recall@3": 1.0,
+      "mrr@3": 1.0,
+      "ndcg@3": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@5": 1.0
+    },
+    {
+      "question_id": "KVKK-044",
+      "question": "Kurum hangi birimlerden olu?ur ve karar organ? hangisidir?",
+      "reference_answer": "Kurum, Kurul ve Başkanlıktan oluşur. Kurumun karar organı Kuruldur.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "Kurumun yap?s?",
+      "gold_article_ids": [
+        "kvkk-6698:19"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-6698:19",
+        "kvkk-6698:23",
+        "kvkk-6698:21",
+        "kvkk-verbis-yonetmeligi:11",
+        "kvkk-6698:24"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 1.0,
+      "mrr@1": 1.0,
+      "ndcg@1": 1.0,
+      "recall@3": 1.0,
+      "mrr@3": 1.0,
+      "ndcg@3": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@5": 1.0
+    },
+    {
+      "question_id": "KVKK-045",
+      "question": "Ki?isel Verileri Koruma Kurumunun Kanunda say?lan g?revleri nelerdir?",
+      "reference_answer": "Kurumun görevleri şunlardır:\n\na) Görev alanı itibarıyla, uygulamaları ve mevzuattaki gelişmeleri takip etmek, değerlendirme ve önerilerde bulunmak, araştırma ve incelemeler yapmak veya yaptırmak.\n\nb) İhtiyaç duyulması hâlinde, görev alanına giren konularda kamu kurum ve kuruluşları, sivil toplum kuruluşları, meslek örgütleri veya üniversitelerle iş birliği yapmak.\n\nc) Kişisel verilerle ilgili uluslararası gelişmeleri izlemek ve değerlendirmek, görev alanına giren konularda uluslararası kuruluşlarla iş birliği yapmak, toplantılara katılmak.\n\nç) Yıllık faaliyet raporunu Cumhurbaşkanlığına, Türkiye Büyük Millet Meclisi İnsan Haklarını İnceleme Komisyonuna (…)[3] sunmak.\n\nd) Kanunlarla verilen diğer görevleri yerine getirmek.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "Kurumun g?revleri",
+      "gold_article_ids": [
+        "kvkk-6698:20"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-yurtdisi-aktarim-yonetmeligi:4",
+        "kvkk-6698:3",
+        "kvkk-silme-yonetmeligi:4",
+        "kvkk-verbis-yonetmeligi:4",
+        "kvkk-6698:19"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 0.0,
+      "mrr@3": 0.0,
+      "ndcg@3": 0.0,
+      "recall@5": 0.0,
+      "mrr@5": 0.0,
+      "ndcg@5": 0.0
+    },
+    {
+      "question_id": "KVKK-046",
+      "question": "Kurul g?rev ve yetkilerini nas?l kullan?r; d??ar?dan talimat alabilir mi?",
+      "reference_answer": "Kurul, bu Kanunla ve diğer mevzuatla verilen görev ve yetkilerini kendi sorumluluğu altında, bağımsız olarak yerine getirir ve kullanır. Görev alanına giren konularla ilgili olarak hiçbir organ, makam, merci veya kişi, Kurula emir ve talimat veremez, tavsiye veya telkinde bulunamaz.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "Kurulun ba??ms?zl???",
+      "gold_article_ids": [
+        "kvkk-6698:21"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-6698:15",
+        "kvkk-verbis-yonetmeligi:16",
+        "kvkk-6698:24",
+        "kvkk-6698:22",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:9"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 0.0,
+      "mrr@3": 0.0,
+      "ndcg@3": 0.0,
+      "recall@5": 0.0,
+      "mrr@5": 0.0,
+      "ndcg@5": 0.0
+    },
+    {
+      "question_id": "KVKK-047",
+      "question": "Ki?isel Verileri Koruma Kurulu ka? ?yeden olu?ur ve ?yeleri kim se?er?",
+      "reference_answer": "Kurul, dokuz üyeden oluşur. Kurulun beş üyesi Türkiye Büyük Millet Meclisi, dört üyesi Cumhurbaşkanı tarafından seçilir. [4]",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "Kurulun yap?s?",
+      "gold_article_ids": [
+        "kvkk-6698:21"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-yurtdisi-aktarim-yonetmeligi:19",
+        "kvkk-6698:19",
+        "kvkk-6698:3",
+        "kvkk-6698:26",
+        "kvkk-rehber-ozel-nitelikli-veriler:Bölüm 5"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 0.0,
+      "mrr@3": 0.0,
+      "ndcg@3": 0.0,
+      "recall@5": 0.0,
+      "mrr@5": 0.0,
+      "ndcg@5": 0.0
+    },
+    {
+      "question_id": "KVKK-048",
+      "question": "Ki?isel Verileri Koruma Kurulunun temel g?rev ve yetkileri nelerdir?",
+      "reference_answer": "Kurulun görev ve yetkileri şunlardır:\n\na) Kişisel verilerin, temel hak ve özgürlüklere uygun şekilde işlenmesini sağlamak.\n\nb) Kişisel verilerle ilgili haklarının ihlal edildiğini ileri sürenlerin şikâyetlerini karara bağlamak.\n\nc) Şikâyet üzerine veya ihlal iddiasını öğrenmesi durumunda resen görev alanına giren konularda kişisel verilerin kanunlara uygun olarak işlenip işlenmediğini incelemek ve gerektiğinde bu konuda geçici önlemler almak.\n\nç) Özel nitelikli kişisel verilerin işlenmesi için aranan yeterli önlemleri belirlemek.\n\nd) Veri Sorumluları Sicilinin tutulmasını sağlamak.\n\ne) Kurulun görev alanı ile Kurumun işleyişine ilişkin konularda gerekli düzenleyici işlemleri yapmak.\n\nf) Veri güvenliğine ilişkin yükümlülükleri belirlemek amacıyla düzenleyici işlem yapmak.\n\ng) Veri sorumlusunun ve temsilcisinin görev, yetki ve sorumluluklarına ilişkin düzenleyici işlem yapmak.\n\nğ) Bu Kanunda öngörülen idari yaptırımlara karar vermek.\n\nh) Diğer kurum ve kuruluşlarca hazırlanan ve kişisel verilere ilişkin hüküm içeren mevzuat taslakları hakkında görüş bildirmek.\n\nı) Kurumun; stratejik planını karara bağlamak, amaç ve hedeflerini, hizmet kalite standartlarını ve performans kriterlerini belirlemek.\n\ni) Kurumun stratejik planı ile amaç ve hedeflerine uygun olarak hazırlanan bütçe teklifini görüşmek ve karara bağlamak.\n\nj) Kurumun performansı, mali durumu, yıllık faaliyetleri ve ihtiyaç duyulan konular hakkında hazırlanan rapor taslaklarını onaylamak ve yayımlamak.\n\nk) Taşınmaz alımı, satımı ve kiralanması konularındaki önerileri görüşüp karara bağlamak.\n\nl) Kanunlarla verilen diğer görevleri yerine getirmek.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "Kurulun yetkileri",
+      "gold_article_ids": [
+        "kvkk-6698:22"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-6698:3",
+        "kvkk-rehber-ozel-nitelikli-veriler:Bölüm 5",
+        "kvkk-6698:22",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:19",
+        "kvkk-6698:19"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 1.0,
+      "mrr@3": 0.3333333333333333,
+      "ndcg@3": 0.5,
+      "recall@5": 1.0,
+      "mrr@5": 0.3333333333333333,
+      "ndcg@5": 0.5
+    },
+    {
+      "question_id": "KVKK-049",
+      "question": "Kurulun toplanmas? ve karar almas? i?in ka? ?ye gerekir?",
+      "reference_answer": "Kurul, başkan dâhil en az altı üye ile toplanır ve üye tam sayısının salt çoğunluğuyla karar alır. Kurul üyeleri çekimser oy kullanamaz.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "Kurulun ?al??ma esaslar?",
+      "gold_article_ids": [
+        "kvkk-6698:23"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-6698:23",
+        "kvkk-6698:22",
+        "kvkk-6698:15",
+        "kvkk-6698:25",
+        "kvkk-silme-yonetmeligi:7"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 1.0,
+      "mrr@1": 1.0,
+      "ndcg@1": 1.0,
+      "recall@3": 1.0,
+      "mrr@3": 1.0,
+      "ndcg@3": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@5": 1.0
+    },
+    {
+      "question_id": "KVKK-050",
+      "question": "Kurul ?yeleri hangi yak?nlar?n? ilgilendiren konulardaki toplant? ve oylamalara kat?lamaz?",
+      "reference_answer": "Kurul üyeleri; kendilerini, üçüncü dereceye kadar kan ve ikinci dereceye kadar kayın hısımlarını, evlatlıklarını ve aralarındaki evlilik bağı kalkmış olsa bile eşlerini ilgilendiren konularla ilgili toplantı ve oylamaya katılamaz.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "Kurulun ?al??ma esaslar?",
+      "gold_article_ids": [
+        "kvkk-6698:23"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-6698:23",
+        "kvkk-rehber-yurt-disi-aktarim:Bölüm 4",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:17",
+        "kvkk-6698:21"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 1.0,
+      "mrr@1": 1.0,
+      "ndcg@1": 1.0,
+      "recall@3": 1.0,
+      "mrr@3": 1.0,
+      "ndcg@3": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@5": 1.0
+    },
+    {
+      "question_id": "KVKK-051",
+      "question": "Kurul toplant?lar?ndaki g?r??meler kural olarak a??k m?d?r?",
+      "reference_answer": "Aksi kararlaştırılmadıkça, Kurul toplantılarındaki görüşmeler gizlidir.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "Kurulun ?al??ma esaslar?",
+      "gold_article_ids": [
+        "kvkk-6698:23"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-6698:25",
+        "kvkk-verbis-yonetmeligi:16",
+        "kvkk-verbis-yonetmeligi:4",
+        "kvkk-6698:21"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 0.0,
+      "mrr@3": 0.0,
+      "ndcg@3": 0.0,
+      "recall@5": 0.0,
+      "mrr@5": 0.0,
+      "ndcg@5": 0.0
+    },
+    {
+      "question_id": "KVKK-052",
+      "question": "Kurumun genel y?netimi ve temsilinden kim sorumludur?",
+      "reference_answer": "Başkan, Kurumun genel yönetim ve temsilinden sorumludur. Bu sorumluluk, Kurum çalışmalarının düzenlenmesi, yürütülmesi, denetlenmesi, değerlendirilmesi ve gerektiğinde kamuoyuna duyurulması görev ve yetkilerini kapsar.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "Ba?kan?n g?revleri",
+      "gold_article_ids": [
+        "kvkk-6698:24"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-6698:24",
+        "kvkk-6698:19",
+        "kvkk-6698:25",
+        "kvkk-6698:22",
+        "kvkk-6698:20"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 1.0,
+      "mrr@1": 1.0,
+      "ndcg@1": 1.0,
+      "recall@3": 1.0,
+      "mrr@3": 1.0,
+      "ndcg@3": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@5": 1.0
+    },
+    {
+      "question_id": "KVKK-053",
+      "question": "Ki?inin kendisi ve ayn? konutta ya?ad??? ailesiyle ilgili faaliyetlerde Kanun hangi ?artla uygulanmayabilir?",
+      "reference_answer": "Bu Kanun hükümleri aşağıdaki hâllerde uygulanmaz:\n\na) Kişisel verilerin, üçüncü kişilere verilmemek ve veri güvenliğine ilişkin yükümlülüklere uyulmak kaydıyla gerçek kişiler tarafından tamamen kendisiyle veya aynı konutta yaşayan aile fertleriyle ilgili faaliyetler kapsamında işlenmesi.\n\nb) Kişisel verilerin resmi istatistik ile anonim hâle getirilmek suretiyle araştırma, planlama ve istatistik gibi amaçlarla işlenmesi.\n\nc) Kişisel verilerin millî savunmayı, millî güvenliği, kamu güvenliğini, kamu düzenini, ekonomik güvenliği, özel hayatın gizliliğini veya kişilik haklarını ihlal etmemek ya da suç teşkil etmemek kaydıyla, sanat, tarih, edebiyat veya bilimsel amaçlarla ya da ifade özgürlüğü kapsamında işlenmesi.\n\nç) Kişisel verilerin millî savunmayı, millî güvenliği, kamu güvenliğini, kamu düzenini veya ekonomik güvenliği sağlamaya yönelik olarak kanunla görev ve yetki verilmiş kamu kurum ve kuruluşları tarafından yürütülen önleyici, koruyucu ve istihbari faaliyetler kapsamında işlenmesi.\n\nd) Kişisel verilerin soruşturma, kovuşturma, yargılama veya infaz işlemlerine ilişkin olarak yargı makamları veya infaz mercileri tarafından işlenmesi.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "Kanun istisnalar?",
+      "gold_article_ids": [
+        "kvkk-6698:28"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-6698:28",
+        "kvkk-6698:5",
+        "kvkk-6698:2",
+        "kvkk-rehber-ilgili-kisi-haklari:Bölüm 1",
+        "kvkk-rehber-aydinlatma:Bölüm 4"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 1.0,
+      "mrr@1": 1.0,
+      "ndcg@1": 1.0,
+      "recall@3": 1.0,
+      "mrr@3": 1.0,
+      "ndcg@3": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@5": 1.0
+    },
+    {
+      "question_id": "KVKK-054",
+      "question": "Kanunun temel ilkelerine uygun ve orant?l? olmak kayd?yla hangi h?k?mler baz? durumlarda uygulanmayabilir?",
+      "reference_answer": "Bu Kanunun amacına ve temel ilkelerine uygun ve orantılı olmak kaydıyla veri sorumlusunun aydınlatma yükümlülüğünü düzenleyen 10 uncu, zararın giderilmesini talep etme hakkı hariç, ilgili kişinin haklarını düzenleyen 11 inci ve Veri Sorumluları Siciline kayıt yükümlülüğünü düzenleyen 16 ncı maddeleri aşağıdaki hâllerde uygulanmaz:\n\na) Kişisel veri işlemenin suç işlenmesinin önlenmesi veya suç soruşturması için gerekli olması.\n\nb) İlgili kişinin kendisi tarafından alenileştirilmiş kişisel verilerin işlenmesi.\n\nc) Kişisel veri işlemenin kanunun verdiği yetkiye dayanılarak görevli ve yetkili kamu kurum ve kuruluşları ile kamu kurumu niteliğindeki meslek kuruluşlarınca, denetleme veya düzenleme görevlerinin yürütülmesi ile disiplin soruşturma veya kovuşturması için gerekli olması.\n\nç) Kişisel veri işlemenin bütçe, vergi ve mali konulara ilişkin olarak Devletin ekonomik ve mali çıkarlarının korunması için gerekli olması.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "Kanun istisnalar?",
+      "gold_article_ids": [
+        "kvkk-6698:28"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-6698:28",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:13",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:15",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:6",
+        "kvkk-rehber-yurt-disi-aktarim:Bölüm 11"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 1.0,
+      "mrr@1": 1.0,
+      "ndcg@1": 1.0,
+      "recall@3": 1.0,
+      "mrr@3": 1.0,
+      "ndcg@3": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@5": 1.0
+    },
+    {
+      "question_id": "KVKK-055",
+      "question": "6698 say?l? Kanunun baz? maddeleri yay?mdan ne kadar sonra y?r?rl??e girer?",
+      "reference_answer": "Bu Kanunun;\n\na) 8 inci, 9 uncu, 11 inci, 13 üncü, 14 üncü, 15 inci, 16 ncı, 17 nci ve 18 inci maddeleri yayımı tarihinden altı ay sonra,\n\nb) Diğer maddeleri ise yayımı tarihinde,\n\nyürürlüğe girer.",
+      "source_urls": [
+        "https://www.mevzuat.gov.tr/anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=6698&MevzuatTertip=5"
+      ],
+      "category": "Y?r?rl?k",
+      "gold_article_ids": [
+        "kvkk-6698:32"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-6698:32",
+        "kvkk-verbis-yonetmeligi:3",
+        "kvkk-silme-yonetmeligi:3",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:18",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:3"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 1.0,
+      "mrr@1": 1.0,
+      "ndcg@1": 1.0,
+      "recall@3": 1.0,
+      "mrr@3": 1.0,
+      "ndcg@3": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@5": 1.0
+    },
+    {
+      "question_id": "KVKK-056",
+      "question": "Veri i?leyen yurt d???na aktar?m yaparken veri sorumlusunun hangi talimatlar?na uymal?d?r?",
+      "reference_answer": "Kişisel veriler, veri sorumlusu ve veri işleyen tarafından ancak Kanunda ve bu Yönetmelikte öngörülen usul ve esaslara uygun olarak yurt dışına aktarılabilir. Kişisel verilerin veri işleyen tarafından aktarılması hâlinde ayrıca veri sorumlusunun talimatlarına da uyulması zorunludur.",
+      "source_urls": [
+        "https://www.resmigazete.gov.tr/eskiler/2024/07/20240710-2.htm"
+      ],
+      "category": "Yurt d???na aktar?m usulleri",
+      "gold_article_ids": [
+        "kvkk-yurtdisi-aktarim-yonetmeligi:5"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-6698:10",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:5",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:7",
+        "kvkk-6698:9",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:4"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 1.0,
+      "mrr@3": 0.5,
+      "ndcg@3": 0.6309297535714575,
+      "recall@5": 1.0,
+      "mrr@5": 0.5,
+      "ndcg@5": 0.6309297535714575
+    },
+    {
+      "question_id": "KVKK-057",
+      "question": "Y?netmeli?e g?re yurt d???na aktar?m?n yap?labilmesi i?in hangi genel ?artlar ve aktar?m yollar? aran?r?",
+      "reference_answer": "Kişisel veriler, Kanunun 5 inci ve 6 ncı maddelerinde belirtilen şartlardan birinin varlığı ve aşağıda belirtilen hâllerden birinin gerçekleşmesi durumunda veri sorumluları ve veri işleyenler tarafından yurt dışına aktarılabilir:\n\na) Aktarımın yapılacağı ülke, ülke içerisindeki sektörler veya uluslararası kuruluşlar hakkında yeterlilik kararı bulunması.\n\nb) Yeterlilik kararının bulunmaması durumunda, ilgili kişinin aktarımın yapılacağı ülkede de haklarını kullanma ve etkili kanun yollarına başvurma imkânının bulunması kaydıyla, 10 uncu maddede belirtilen uygun güvencelerden birinin taraflarca sağlanması.",
+      "source_urls": [
+        "https://www.resmigazete.gov.tr/eskiler/2024/07/20240710-2.htm"
+      ],
+      "category": "Yurt d???na aktar?m usulleri",
+      "gold_article_ids": [
+        "kvkk-yurtdisi-aktarim-yonetmeligi:6"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-rehber-aydinlatma:Bölüm 4",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:11",
+        "kvkk-6698:11",
+        "kvkk-rehber-aydinlatma:Bölüm 3",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:15"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 0.0,
+      "mrr@3": 0.0,
+      "ndcg@3": 0.0,
+      "recall@5": 0.0,
+      "mrr@5": 0.0,
+      "ndcg@5": 0.0
+    },
+    {
+      "question_id": "KVKK-058",
+      "question": "Yeterlilik karar? ve uygun g?vence yoksa yurt d???na aktar?m hangi dar ko?ulda yap?labilir?",
+      "reference_answer": "Yeterlilik kararının bulunmaması ve 10 uncu maddede belirtilen uygun güvencelerden birinin taraflarca sağlanamaması durumunda kişisel veriler, arızi olmak kaydıyla sadece 16 ncı maddede belirtilen istisnai hâllerden birinin varlığı hâlinde veri sorumluları ve veri işleyenler tarafından yurt dışına aktarılabilir.",
+      "source_urls": [
+        "https://www.resmigazete.gov.tr/eskiler/2024/07/20240710-2.htm"
+      ],
+      "category": "Ar?zi aktar?m",
+      "gold_article_ids": [
+        "kvkk-yurtdisi-aktarim-yonetmeligi:6"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-yurtdisi-aktarim-yonetmeligi:8",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:6",
+        "kvkk-rehber-yurt-disi-aktarim:Bölüm 3",
+        "kvkk-rehber-yurt-disi-aktarim:Bölüm 6",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:9"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 1.0,
+      "mrr@3": 0.5,
+      "ndcg@3": 0.6309297535714575,
+      "recall@5": 1.0,
+      "mrr@5": 0.5,
+      "ndcg@5": 0.6309297535714575
+    },
+    {
+      "question_id": "KVKK-059",
+      "question": "Yurt d???na aktar?m yapan veri i?leyen hangi ama? ve talimat ?er?evesinde hareket eder?",
+      "reference_answer": "Kişisel verilerin veri işleyen tarafından yurt dışına aktarılması hâlinde veri işleyen; veri sorumlusu tarafından belirlenmiş amaç ve kapsam çerçevesinde, veri sorumlusu adına ve onun verdiği talimatlara uygun olarak hareket eder. Veri işleyen; kişisel verilerin hukuka aykırı olarak işlenmesini önlemek, kişisel verilere hukuka aykırı olarak erişilmesini önlemek ve kişisel verilerin muhafazasını sağlamak amacıyla kişisel verinin niteliğine göre uygun güvenlik düzeyini temin etmeye yönelik gerekli her türlü teknik ve idari tedbirleri alır.",
+      "source_urls": [
+        "https://www.resmigazete.gov.tr/eskiler/2024/07/20240710-2.htm"
+      ],
+      "category": "Veri i?leyenin y?k?ml?l???",
+      "gold_article_ids": [
+        "kvkk-yurtdisi-aktarim-yonetmeligi:7"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-yurtdisi-aktarim-yonetmeligi:7",
+        "kvkk-rehber-aydinlatma:Bölüm 4",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:5",
+        "kvkk-6698:10",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:4"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 1.0,
+      "mrr@1": 1.0,
+      "ndcg@1": 1.0,
+      "recall@3": 1.0,
+      "mrr@3": 1.0,
+      "ndcg@3": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@5": 1.0
+    },
+    {
+      "question_id": "KVKK-060",
+      "question": "Kurul yeterlilik karar? verirken hangi unsurlar? dikkate al?r?",
+      "reference_answer": "Kurul, kişisel verilerin yurt dışına aktarımı ile ilgili olarak bir ülkenin, ülke içerisindeki bir veya daha fazla sektörün ya da bir uluslararası kuruluşun yeterli düzeyde koruma sağladığına karar verebilir. Yeterlilik kararı verilirken öncelikle aşağıdaki hususlar dikkate alınır:\n\na) Kişisel verilerin aktarılacağı ülke, ülke içerisindeki sektörler veya uluslararası kuruluşlar ile Türkiye arasında kişisel veri aktarımına ilişkin karşılıklılık durumu.\n\nb) Kişisel verilerin aktarılacağı ülkenin ilgili mevzuatı ve uygulaması ile kişisel verilerin aktarılacağı uluslararası kuruluşun tâbi olduğu kurallar.\n\nc) Kişisel verilerin aktarılacağı ülkede veya uluslararası kuruluşun tâbi olduğu bağımsız ve etkin bir veri koruma kurumunun varlığı ile idari ve adli başvuru yollarının bulunması.\n\nç) Kişisel verilerin aktarılacağı ülkenin veya uluslararası kuruluşun, kişisel verilerin korunmasıyla ilgili uluslararası sözleşmelere taraf veya uluslararası kuruluşlara üye olma durumu.\n\nd) Kişisel verilerin aktarılacağı ülkenin veya uluslararası kuruluşun, Türkiye’nin üye olduğu küresel veya bölgesel kuruluşlara üye olma durumu.\n\ne) Türkiye’nin taraf olduğu uluslararası sözleşmeler.",
+      "source_urls": [
+        "https://www.resmigazete.gov.tr/eskiler/2024/07/20240710-2.htm"
+      ],
+      "category": "Yeterlilik karar?",
+      "gold_article_ids": [
+        "kvkk-yurtdisi-aktarim-yonetmeligi:8"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-rehber-yurt-disi-aktarim:Bölüm 4",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:8",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:9",
+        "kvkk-6698:9",
+        "kvkk-6698:23"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 1.0,
+      "mrr@3": 0.5,
+      "ndcg@3": 0.6309297535714575,
+      "recall@5": 1.0,
+      "mrr@5": 0.5,
+      "ndcg@5": 0.6309297535714575
+    },
+    {
+      "question_id": "KVKK-061",
+      "question": "Yeterlilik kararlar? en ge? hangi aral?kla yeniden de?erlendirilir?",
+      "reference_answer": "Yeterlilik kararı, en geç dört yılda bir yeniden değerlendirilir. İlgili yeterlilik kararında, yeniden değerlendirme dönemleri açıkça belirlenir. Kurul, yeniden değerlendirme sonucunda ilgili ülkenin, ülke içerisindeki bir veya daha fazla sektörün ya da uluslararası kuruluşun yeterli düzeyde koruma sağlamadığını tespit etmesi hâlinde kararını ileriye etkili olmak üzere değiştirebilir, askıya alabilir veya kaldırabilir.",
+      "source_urls": [
+        "https://www.resmigazete.gov.tr/eskiler/2024/07/20240710-2.htm"
+      ],
+      "category": "Yeterlilik karar?",
+      "gold_article_ids": [
+        "kvkk-yurtdisi-aktarim-yonetmeligi:9"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-yurtdisi-aktarim-yonetmeligi:9",
+        "kvkk-rehber-yurt-disi-aktarim:Bölüm 4",
+        "kvkk-rehber-yurt-disi-aktarim:Bölüm 3",
+        "kvkk-rehber-aydinlatma:Bölüm 3",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:8"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 1.0,
+      "mrr@1": 1.0,
+      "ndcg@1": 1.0,
+      "recall@3": 1.0,
+      "mrr@3": 1.0,
+      "ndcg@3": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@5": 1.0
+    },
+    {
+      "question_id": "KVKK-062",
+      "question": "Yeterlilik karar? bulunmad???nda uygun g?vence i?in hangi genel ko?ullar gerekir?",
+      "reference_answer": "Kişisel veriler, yeterlilik kararının bulunmaması durumunda, Kanunun 5 inci ve 6 ncı maddelerinde belirtilen şartlardan birinin varlığı, ilgili kişinin aktarımın yapılacağı ülkede de haklarını kullanma ve etkili kanun yollarına başvurma imkânının bulunması kaydıyla, ancak aşağıda belirtilen uygun güvencelerden birinin aktarım taraflarınca sağlanması hâlinde yurt dışına aktarılabilir:\n\na) Yurt dışındaki kamu kurum ve kuruluşları veya uluslararası kuruluşlar ile Türkiye’deki kamu kurum ve kuruluşları veya kamu kurumu niteliğindeki meslek kuruluşları arasında yapılan uluslararası sözleşme niteliğinde olmayan anlaşmanın varlığı ve Kurul tarafından aktarıma izin verilmesi.\n\nb) Ortak ekonomik faaliyette bulunan teşebbüs grubu bünyesindeki şirketlerin uymakla yükümlü oldukları, kişisel verilerin korunmasına ilişkin hükümler ihtiva eden ve Kurul tarafından onaylanan bağlayıcı şirket kurallarının varlığı.\n\nc) Kurul tarafından ilan edilen, veri kategorileri, veri aktarımının amaçları, alıcı ve alıcı grupları, veri alıcısı tarafından alınacak teknik ve idari tedbirler, özel nitelikli kişisel veriler için alınan ek önlemler gibi hususları ihtiva eden standart sözleşmenin varlığı.\n\nç) Yeterli korumayı sağlayacak hükümlerin yer aldığı yazılı bir taahhütnamenin varlığı ve Kurul tarafından aktarıma izin verilmesi.\n\nUluslararası sözleşme niteliğinde olmayan anlaşmayla uygun güvencenin sağlanması",
+      "source_urls": [
+        "https://www.resmigazete.gov.tr/eskiler/2024/07/20240710-2.htm"
+      ],
+      "category": "Uygun g?venceler",
+      "gold_article_ids": [
+        "kvkk-yurtdisi-aktarim-yonetmeligi:10"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-yurtdisi-aktarim-yonetmeligi:9",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:8",
+        "kvkk-rehber-yurt-disi-aktarim:Bölüm 4",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:7",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:6"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 0.0,
+      "mrr@3": 0.0,
+      "ndcg@3": 0.0,
+      "recall@5": 0.0,
+      "mrr@5": 0.0,
+      "ndcg@5": 0.0
+    },
+    {
+      "question_id": "KVKK-063",
+      "question": "Ayn? te?ebb?s grubu i?indeki ?irketler yurt d???na aktar?m i?in hangi g?venceye dayanabilir?",
+      "reference_answer": "Ortak ekonomik faaliyette bulunan teşebbüs grubu bünyesindeki şirketlerin uymakla yükümlü olduğu kişisel verilerin korunmasına yönelik bağlayıcı şirket kuralları vasıtasıyla uygun güvence sağlanabilir. Bağlayıcı şirket kurallarına dayanılarak kişisel verilerin yurt dışına aktarılabilmesi için Kurula onay başvurusunda bulunulur.",
+      "source_urls": [
+        "https://www.resmigazete.gov.tr/eskiler/2024/07/20240710-2.htm"
+      ],
+      "category": "Ba?lay?c? ?irket kurallar?",
+      "gold_article_ids": [
+        "kvkk-yurtdisi-aktarim-yonetmeligi:12"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-rehber-aydinlatma:Bölüm 4",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:13",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:12",
+        "kvkk-rehber-yurt-disi-aktarim:Bölüm 8",
+        "kvkk-rehber-aydinlatma:Bölüm 3"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 1.0,
+      "mrr@3": 0.3333333333333333,
+      "ndcg@3": 0.5,
+      "recall@5": 1.0,
+      "mrr@5": 0.3333333333333333,
+      "ndcg@5": 0.5
+    },
+    {
+      "question_id": "KVKK-064",
+      "question": "Yaz?l? taahh?tname yurt d???na aktar?mda nas?l bir g?vence sa?layabilir?",
+      "reference_answer": "Aktarım tarafları arasında akdedilecek yazılı bir taahhütnamede yer verilecek kişisel verilerin korunmasına yönelik hükümler vasıtasıyla uygun güvence sağlanabilir.",
+      "source_urls": [
+        "https://www.resmigazete.gov.tr/eskiler/2024/07/20240710-2.htm"
+      ],
+      "category": "Taahh?tname",
+      "gold_article_ids": [
+        "kvkk-yurtdisi-aktarim-yonetmeligi:15"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-rehber-ilgili-kisi-haklari:Bölüm 5",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:6",
+        "kvkk-silme-yonetmeligi:6",
+        "kvkk-6698:9",
+        "kvkk-rehber-yurt-disi-aktarim:Bölüm 12"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 0.0,
+      "mrr@3": 0.0,
+      "ndcg@3": 0.0,
+      "recall@5": 0.0,
+      "mrr@5": 0.0,
+      "ndcg@5": 0.0
+    },
+    {
+      "question_id": "KVKK-065",
+      "question": "Yeterlilik karar? ve uygun g?vence yoksa hangi istisnai aktar?m h?lleri g?ndeme gelebilir?",
+      "reference_answer": "Kişisel veriler, yeterlilik kararının bulunmaması ve 10 uncu maddede öngörülen uygun güvencelerden herhangi birinin sağlanamaması durumunda, arızi olmak kaydıyla sadece ikinci fıkrada belirtilen istisnai aktarım hâllerinden birinin varlığı hâlinde yurt dışına aktarılabilir. Düzenli olmayan, tek veya birkaç sefer gerçekleşen, süreklilik arz etmeyen ve olağan faaliyet akışı içinde bulunmayan aktarımlar arızi niteliktedir.",
+      "source_urls": [
+        "https://www.resmigazete.gov.tr/eskiler/2024/07/20240710-2.htm"
+      ],
+      "category": "?stisnai aktar?m",
+      "gold_article_ids": [
+        "kvkk-yurtdisi-aktarim-yonetmeligi:16"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-rehber-yurt-disi-aktarim:Bölüm 2",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:6",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:9",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:8",
+        "kvkk-rehber-yurt-disi-aktarim:Bölüm 4"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 0.0,
+      "mrr@3": 0.0,
+      "ndcg@3": 0.0,
+      "recall@5": 0.0,
+      "mrr@5": 0.0,
+      "ndcg@5": 0.0
+    },
+    {
+      "question_id": "KVKK-066",
+      "question": "Hangi veri sorumlular? ki?isel veri saklama ve imha politikas? haz?rlamakla y?k?ml?d?r?",
+      "reference_answer": "Kanunun 16 ncı maddesi gereğince Veri Sorumluları Siciline kayıt olmakla yükümlü olan veri sorumluları, kişisel veri işleme envanterine uygun olarak kişisel veri saklama ve imha politikası hazırlamakla yükümlüdür.",
+      "source_urls": [
+        "https://www.kvkk.gov.tr/Icerik/5441/KISISEL-VERILERIN-SILINMESI-YOK-EDILMESI-VEYA-ANONIM-HALE-GETIRILMESI-HAKKINDA-YONETMELIK"
+      ],
+      "category": "Saklama ve imha politikas?",
+      "gold_article_ids": [
+        "kvkk-silme-yonetmeligi:5"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-silme-yonetmeligi:6",
+        "kvkk-silme-yonetmeligi:5",
+        "kvkk-silme-yonetmeligi:11",
+        "kvkk-silme-yonetmeligi:4",
+        "kvkk-rehber-aydinlatma:Bölüm 4"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 1.0,
+      "mrr@3": 0.5,
+      "ndcg@3": 0.6309297535714575,
+      "recall@5": 1.0,
+      "mrr@5": 0.5,
+      "ndcg@5": 0.6309297535714575
+    },
+    {
+      "question_id": "KVKK-067",
+      "question": "Saklama ve imha politikas? asgari olarak hangi unsurlar? i?ermelidir?",
+      "reference_answer": "Kişisel veri saklama ve imha politikası asgari olarak;\n\na) Kişisel veri saklama ve imha politikasının hazırlanma amacına,\n\nb) Kişisel veri saklama ve imha politikası ile düzenlenen kayıt ortamlarına,\n\nc) Kişisel veri saklama ve imha politikasında yer verilen hukuki ve teknik terimlerin tanımlarına,\n\nç) Kişisel verilerin saklanmasını ve imhasını gerektiren hukuki, teknik ya da diğer sebeplere ilişkin açıklamaya,\n\nd) Kişisel verilerin güvenli bir şekilde saklanması ile hukuka aykırı olarak işlenmesi ve erişilmesinin önlenmesi için alınmış teknik ve idari tedbirlere,\n\ne) Kişisel verilerin hukuka uygun olarak imha edilmesi için alınmış teknik ve idari tedbirlere,\n\nf) Kişisel verileri saklama ve imha süreçlerinde yer alanların unvanlarına, birimlerine ve görev tanımlarına,\n\ng) Saklama ve imha sürelerini gösteren tabloya,\n\nğ) Periyodik imha sürelerine,\n\nh) Mevcut kişisel veri saklama ve imha politikasında güncelleme yapılmış ise söz konusu değişikliğe,\n\nilişkin bilgileri kapsar.",
+      "source_urls": [
+        "https://www.kvkk.gov.tr/Icerik/5441/KISISEL-VERILERIN-SILINMESI-YOK-EDILMESI-VEYA-ANONIM-HALE-GETIRILMESI-HAKKINDA-YONETMELIK"
+      ],
+      "category": "Saklama ve imha politikas?",
+      "gold_article_ids": [
+        "kvkk-silme-yonetmeligi:6"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-silme-yonetmeligi:6",
+        "kvkk-silme-yonetmeligi:5",
+        "kvkk-silme-yonetmeligi:11",
+        "kvkk-silme-yonetmeligi:4",
+        "kvkk-silme-yonetmeligi:7"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 1.0,
+      "mrr@1": 1.0,
+      "ndcg@1": 1.0,
+      "recall@3": 1.0,
+      "mrr@3": 1.0,
+      "ndcg@3": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@5": 1.0
+    },
+    {
+      "question_id": "KVKK-068",
+      "question": "Veri i?leme ?artlar?n?n tamam? ortadan kalk?nca ki?isel veriler i?in ne yap?lmal?d?r?",
+      "reference_answer": "Kanunun 5 inci ve 6 ncı maddelerinde yer alan kişisel verilerin işlenme şartlarının tamamının ortadan kalkması halinde, kişisel verilerin veri sorumlusu tarafından resen veya ilgili kişinin talebi üzerine silinmesi, yok edilmesi veya anonim hâle getirilmesi gerekir.",
+      "source_urls": [
+        "https://www.kvkk.gov.tr/Icerik/5441/KISISEL-VERILERIN-SILINMESI-YOK-EDILMESI-VEYA-ANONIM-HALE-GETIRILMESI-HAKKINDA-YONETMELIK"
+      ],
+      "category": "Silme ve imha ilkeleri",
+      "gold_article_ids": [
+        "kvkk-silme-yonetmeligi:7"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-silme-yonetmeligi:12",
+        "kvkk-6698:7",
+        "kvkk-silme-yonetmeligi:4",
+        "kvkk-verbis-yonetmeligi:14",
+        "kvkk-6698:5"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 0.0,
+      "mrr@3": 0.0,
+      "ndcg@3": 0.0,
+      "recall@5": 0.0,
+      "mrr@5": 0.0,
+      "ndcg@5": 0.0
+    },
+    {
+      "question_id": "KVKK-069",
+      "question": "Y?netmeli?e g?re ki?isel verilerin silinmesi ne anlama gelir?",
+      "reference_answer": "Kişisel verilerin silinmesi, kişisel verilerin ilgili kullanıcılar için hiçbir şekilde erişilemez ve tekrar kullanılamaz hale getirilmesi işlemidir.",
+      "source_urls": [
+        "https://www.kvkk.gov.tr/Icerik/5441/KISISEL-VERILERIN-SILINMESI-YOK-EDILMESI-VEYA-ANONIM-HALE-GETIRILMESI-HAKKINDA-YONETMELIK"
+      ],
+      "category": "Silme tan?m?",
+      "gold_article_ids": [
+        "kvkk-silme-yonetmeligi:8"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-silme-yonetmeligi:7",
+        "kvkk-silme-yonetmeligi:8",
+        "kvkk-rehber-ilgili-kisi-haklari:Bölüm 7",
+        "kvkk-6698:7",
+        "kvkk-silme-yonetmeligi:1"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 1.0,
+      "mrr@3": 0.5,
+      "ndcg@3": 0.6309297535714575,
+      "recall@5": 1.0,
+      "mrr@5": 0.5,
+      "ndcg@5": 0.6309297535714575
+    },
+    {
+      "question_id": "KVKK-070",
+      "question": "Y?netmeli?e g?re ki?isel verilerin yok edilmesi ne anlama gelir?",
+      "reference_answer": "Kişisel verilerin yok edilmesi, kişisel verilerin hiç kimse tarafından hiçbir şekilde erişilemez, geri getirilemez ve tekrar kullanılamaz hale getirilmesi işlemidir.",
+      "source_urls": [
+        "https://www.kvkk.gov.tr/Icerik/5441/KISISEL-VERILERIN-SILINMESI-YOK-EDILMESI-VEYA-ANONIM-HALE-GETIRILMESI-HAKKINDA-YONETMELIK"
+      ],
+      "category": "Yok etme tan?m?",
+      "gold_article_ids": [
+        "kvkk-silme-yonetmeligi:9"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-silme-yonetmeligi:9",
+        "kvkk-rehber-ilgili-kisi-haklari:Bölüm 7",
+        "kvkk-silme-yonetmeligi:7",
+        "kvkk-silme-yonetmeligi:1",
+        "kvkk-6698:11"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 1.0,
+      "mrr@1": 1.0,
+      "ndcg@1": 1.0,
+      "recall@3": 1.0,
+      "mrr@3": 1.0,
+      "ndcg@3": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@5": 1.0
+    },
+    {
+      "question_id": "KVKK-071",
+      "question": "Ki?isel verilerin anonim h?le getirilmesi nas?l tan?mlan?r?",
+      "reference_answer": "Kişisel verilerin anonim hale getirilmesi, kişisel verilerin başka verilerle eşleştirilse dahi hiçbir surette kimliği belirli veya belirlenebilir bir gerçek kişiyle ilişkilendirilemeyecek hale getirilmesidir.",
+      "source_urls": [
+        "https://www.kvkk.gov.tr/Icerik/5441/KISISEL-VERILERIN-SILINMESI-YOK-EDILMESI-VEYA-ANONIM-HALE-GETIRILMESI-HAKKINDA-YONETMELIK"
+      ],
+      "category": "Anonimle?tirme tan?m?",
+      "gold_article_ids": [
+        "kvkk-silme-yonetmeligi:10"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-silme-yonetmeligi:10",
+        "kvkk-silme-yonetmeligi:7",
+        "kvkk-6698:3",
+        "kvkk-6698:7",
+        "kvkk-6698:6"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 1.0,
+      "mrr@1": 1.0,
+      "ndcg@1": 1.0,
+      "recall@3": 1.0,
+      "mrr@3": 1.0,
+      "ndcg@3": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@5": 1.0
+    },
+    {
+      "question_id": "KVKK-072",
+      "question": "?mha politikas? haz?rlayan veri sorumlusu imha y?k?ml?l???n? ne zaman yerine getirir?",
+      "reference_answer": "Kişisel veri saklama ve imha politikası hazırlamış olan veri sorumlusu, kişisel verileri silme, yok etme veya anonim hale getirme yükümlülüğünün ortaya çıktığı tarihi takip eden ilk periyodik imha işleminde, kişisel verileri siler, yok eder veya anonim hale getirir.",
+      "source_urls": [
+        "https://www.kvkk.gov.tr/Icerik/5441/KISISEL-VERILERIN-SILINMESI-YOK-EDILMESI-VEYA-ANONIM-HALE-GETIRILMESI-HAKKINDA-YONETMELIK"
+      ],
+      "category": "Periyodik imha",
+      "gold_article_ids": [
+        "kvkk-silme-yonetmeligi:11"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-silme-yonetmeligi:11",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:7",
+        "kvkk-silme-yonetmeligi:6",
+        "kvkk-silme-yonetmeligi:5",
+        "kvkk-silme-yonetmeligi:4"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 1.0,
+      "mrr@1": 1.0,
+      "ndcg@1": 1.0,
+      "recall@3": 1.0,
+      "mrr@3": 1.0,
+      "ndcg@3": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@5": 1.0
+    },
+    {
+      "question_id": "KVKK-073",
+      "question": "?lgili ki?i verisinin silinmesini istedi?inde veri sorumlusu hangi ko?ulu incelemelidir?",
+      "reference_answer": "(Değişik:RG-28/4/2019-30758) İlgili kişi, Kanunun 11 inci ve 13 üncü maddelerine istinaden veri sorumlusuna başvurarak kendisine ait kişisel verilerin silinmesini veya yok edilmesini talep ettiğinde;\n\na) Kişisel verileri işleme şartlarının tamamı ortadan kalkmışsa; veri sorumlusu talebe konu kişisel verileri siler, yok eder veya anonim hale getirir. Veri sorumlusu, ilgili kişinin talebini en geç otuz gün içinde sonuçlandırır ve ilgili kişiye bilgi verir.\n\nb) Kişisel verileri işleme şartlarının tamamı ortadan kalkmış ve talebe konu olan kişisel veriler üçüncü kişilere aktarılmışsa veri sorumlusu bu durumu üçüncü kişiye bildirir; üçüncü kişi nezdinde bu Yönetmelik kapsamında gerekli işlemlerin yapılmasını temin eder.\n\nc) Kişisel verileri işleme şartlarının tamamı ortadan kalkmamışsa, bu talep veri sorumlusunca Kanunun 13 üncü maddesinin üçüncü fıkrası uyarınca gerekçesi açıklanarak reddedilebilir ve ret cevabı ilgili kişiye en geç otuz gün içinde yazılı olarak ya da elektronik ortamda bildirilir.",
+      "source_urls": [
+        "https://www.kvkk.gov.tr/Icerik/5441/KISISEL-VERILERIN-SILINMESI-YOK-EDILMESI-VEYA-ANONIM-HALE-GETIRILMESI-HAKKINDA-YONETMELIK"
+      ],
+      "category": "?lgili ki?inin talebi",
+      "gold_article_ids": [
+        "kvkk-silme-yonetmeligi:12"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-silme-yonetmeligi:12",
+        "kvkk-6698:10",
+        "kvkk-6698:11",
+        "kvkk-6698:12",
+        "kvkk-6698:16"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 1.0,
+      "mrr@1": 1.0,
+      "ndcg@1": 1.0,
+      "recall@3": 1.0,
+      "mrr@3": 1.0,
+      "ndcg@3": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@5": 1.0
+    },
+    {
+      "question_id": "KVKK-074",
+      "question": "Veri sorumlusu VERB?S?e ne zaman kaydolmal?d?r?",
+      "reference_answer": "Sicilin oluşturulması, idaresi ve gözetimi hususunda aşağıdaki ilke, usul ve esaslara uyulur:\n\na) Veri sorumluları, kişisel veri işlemeye başlamadan önce Sicile kaydolmak zorundadır.\n\nb) Türkiye’de yerleşik olmayan veri sorumluları, veri işlemeye başlamadan önce veri sorumlusu temsilcisi marifetiyle Sicile kaydolmak zorundadır.\n\nc) Sicil kamuya açık biçimde tutulur. Kurul, kamuya açıklık ilkesinin sağlanması şartıyla, bu ilkenin kapsamı ve istisnalarını belirleme yetkisini haizdir.\n\nç) (Değişik:RG-28/4/2019-30758) Sicile kayıtla yükümlü olan veri sorumluları, Kişisel Veri İşleme Envanteri hazırlamakla yükümlüdür. Sicil başvurularında Sicile açıklanacak bilgiler Kişisel Veri İşleme Envanterine dayalı olarak hazırlanır.\n\nd) Kanunun 10 uncu maddesinde veri sorumluları için belirtilen aydınlatma yükümlülüğünde, Kanunun 13 üncü maddesinde belirtilen ilgili kişi başvurularının yanıtlanmasında ve ilgili kişiler tarafından açıklanacak açık rızanın kapsamının belirlenmesinde kişisel veri işleme envanterine dayalı olarak Sicile sunulan ve Sicilde yayınlanan bilgiler esas alınır.\n\ne) Veri sorumluları, Sicile sunulan ve Sicilde yayınlanan bilgilerin eksiksiz, doğru, güncel ve hukuka uygun olmasından sorumludur. Veri sorumlularının Sicile kaydolması Kanun kapsamındaki diğer yükümlülüklerini ortadan kaldırmaz.\n\nf) Kanunun 28 inci maddesinde belirtilen durumlar saklı kalmak kaydıyla Yönetmeliğin 16 ncı maddesinde belirtilen objektif kriterlere dayalı olarak belirli şartları taşıyan veri sorumlularının Kurul tarafından Sicile kayıtla yükümlü tutulmaması; bu veri sorumlularının Kanun kapsamındaki yükümlülüklerini ortadan kaldırmaz.\n\ng) Sicile ilişkin işlemler, veri sorumluları tarafından VERBİS üzerinden gerçekleştirilir.\n\nğ) (Değişik:RG-28/4/2019-30758) Veri sorumluları tarafından Sicile sunulan ve Sicilde yayınlanan kişisel verilerin işlendikleri amaç için gerekli olan azami muhafaza edilme süresi; Kanunun 7 nci maddesinde belirtilen veri sorumlularının silme, yok etme veya anonim hale getirme yükümlülüklerinin yerine getirilmesinde esas alınır.",
+      "source_urls": [
+        "https://www.kvkk.gov.tr/Icerik/5442/VERI-SORUMLULARI-SICILI-HAKKINDA-YONETMELIK"
+      ],
+      "category": "Kay?t y?k?ml?l???",
+      "gold_article_ids": [
+        "kvkk-verbis-yonetmeligi:5"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-verbis-yonetmeligi:7",
+        "kvkk-6698:16",
+        "kvkk-verbis-yonetmeligi:10",
+        "kvkk-verbis-yonetmeligi:9",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:4"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 0.0,
+      "mrr@3": 0.0,
+      "ndcg@3": 0.0,
+      "recall@5": 0.0,
+      "mrr@5": 0.0,
+      "ndcg@5": 0.0
+    },
+    {
+      "question_id": "KVKK-075",
+      "question": "VERB?S?in kurulmas? ve g?ncel tutulmas? i?in hangi birim sorumludur?",
+      "reference_answer": "Sicil, Başkanlık tarafından oluşturulur. Başkanlık, Sicilin oluşturulması, idaresi, güncel biçimde tutulması ve muhafaza edilmesi amacıyla; VERBİS’in kurulması ve işletilmesi için gerekli teknik ve idari tedbirleri alır.",
+      "source_urls": [
+        "https://www.kvkk.gov.tr/Icerik/5442/VERI-SORUMLULARI-SICILI-HAKKINDA-YONETMELIK"
+      ],
+      "category": "Sicilin y?netimi",
+      "gold_article_ids": [
+        "kvkk-verbis-yonetmeligi:6"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-verbis-yonetmeligi:6",
+        "kvkk-rehber-veri-guvenligi:Bölüm 4",
+        "kvkk-6698:12",
+        "kvkk-verbis-yonetmeligi:5",
+        "kvkk-verbis-yonetmeligi:7"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 1.0,
+      "mrr@1": 1.0,
+      "ndcg@1": 1.0,
+      "recall@3": 1.0,
+      "mrr@3": 1.0,
+      "ndcg@3": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@5": 1.0
+    },
+    {
+      "question_id": "KVKK-076",
+      "question": "VERB?S?teki hangi t?r bilgiler kamuya a??klan?r?",
+      "reference_answer": "Veri sorumluları sicilinde yer alan bilgilerden aşağıdakiler kamuya açıklanır:\n\na) (Değişik:RG-28/4/2019-30758) Veri sorumlusu, varsa veri sorumlusu temsilcisi, adresi ve alınmış olması halinde KEP adresi,\n\nb) Kişisel verilerin hangi amaçlarla işlenebileceği,\n\nc) Veri konusu kişi grubu ve grupları ile bu kişilere ait veri kategorileri,\n\nç) Kişisel verilerin aktarılabileceği alıcı ve alıcı grupları,\n\nd) Yabancı ülkelere aktarımı öngörülen kişisel veriler,\n\ne) Sicile kayıt tarihi ile kaydın sona erdiği tarih,\n\nf) Kişisel veri güvenliğine ilişkin alınan tedbirler,\n\ng) Kişisel verilerin işlendikleri amaç için gerekli olan azami süre.",
+      "source_urls": [
+        "https://www.kvkk.gov.tr/Icerik/5442/VERI-SORUMLULARI-SICILI-HAKKINDA-YONETMELIK"
+      ],
+      "category": "Sicile eri?im",
+      "gold_article_ids": [
+        "kvkk-verbis-yonetmeligi:7"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-verbis-yonetmeligi:7",
+        "kvkk-6698:10",
+        "kvkk-rehber-aydinlatma:Bölüm 4",
+        "kvkk-rehber-aydinlatma:Bölüm 3",
+        "kvkk-verbis-yonetmeligi:9"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 1.0,
+      "mrr@1": 1.0,
+      "ndcg@1": 1.0,
+      "recall@3": 1.0,
+      "mrr@3": 1.0,
+      "ndcg@3": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@5": 1.0
+    },
+    {
+      "question_id": "KVKK-077",
+      "question": "Sonradan kay?t y?k?ml?s? h?line gelen veri sorumlusu ka? g?n i?inde Sicile kaydolur?",
+      "reference_answer": "Kayıt yükümlülüğü altında bulunmayan, sonradan kayıt yükümlüsü haline gelen veri sorumluları, yükümlülük altına girmelerini müteakip otuz gün içerisinde Sicile kaydolurlar.",
+      "source_urls": [
+        "https://www.kvkk.gov.tr/Icerik/5442/VERI-SORUMLULARI-SICILI-HAKKINDA-YONETMELIK"
+      ],
+      "category": "Kay?t y?k?ml?l???",
+      "gold_article_ids": [
+        "kvkk-verbis-yonetmeligi:8"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-verbis-yonetmeligi:7",
+        "kvkk-verbis-yonetmeligi:12",
+        "kvkk-verbis-yonetmeligi:8",
+        "kvkk-verbis-yonetmeligi:14",
+        "kvkk-verbis-yonetmeligi:13"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 1.0,
+      "mrr@3": 0.3333333333333333,
+      "ndcg@3": 0.5,
+      "recall@5": 1.0,
+      "mrr@5": 0.3333333333333333,
+      "ndcg@5": 0.5
+    },
+    {
+      "question_id": "KVKK-078",
+      "question": "Kay?t i?in fiil?, teknik veya hukuki imk?ns?zl?k varsa veri sorumlusu ne zaman ba?vurmal? ve ne kadar ek s?re verilebilir?",
+      "reference_answer": "Kayıt yükümlülüğü altında bulunan veri sorumluları, herhangi bir fiili, teknik ya da hukuki imkânsızlık nedeniyle kayıt yükümlülüklerinin yerine getirilememesi halinde, bu imkânsızlığın ortaya çıktığı tarihten itibaren en geç 7 iş günü içerisinde Kuruma yazılı olarak başvurmak ve gerekçesini belirtmek şartıyla, kayıt yükümlülüklerini yerine getirmek için Kurumdan ek süre talep edebilirler. Kurum, bir defaya mahsus olmak ve her halde otuz günü geçmemek üzere ek süre verebilir.",
+      "source_urls": [
+        "https://www.kvkk.gov.tr/Icerik/5442/VERI-SORUMLULARI-SICILI-HAKKINDA-YONETMELIK"
+      ],
+      "category": "Ek s?re talebi",
+      "gold_article_ids": [
+        "kvkk-verbis-yonetmeligi:8"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-6698:10",
+        "kvkk-verbis-yonetmeligi:8",
+        "kvkk-6698:18",
+        "kvkk-6698:12",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:7"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 1.0,
+      "mrr@3": 0.5,
+      "ndcg@3": 0.6309297535714575,
+      "recall@5": 1.0,
+      "mrr@5": 0.5,
+      "ndcg@5": 0.6309297535714575
+    },
+    {
+      "question_id": "KVKK-079",
+      "question": "Sicildeki bilgiler de?i?ti?inde veri sorumlusu ka? g?n i?inde bildirim yapmal?d?r?",
+      "reference_answer": "(Değişik:RG-28/4/2019-30758)Veri sorumluları, Sicilde kayıtlı bilgilerde değişiklik olması halinde meydana gelen değişiklikleri, değişikliğin meydana geldiği tarihten itibaren yedi gün içerisinde VERBİS üzerinden Kuruma bildirir.",
+      "source_urls": [
+        "https://www.kvkk.gov.tr/Icerik/5442/VERI-SORUMLULARI-SICILI-HAKKINDA-YONETMELIK"
+      ],
+      "category": "Kay?t bilgilerinde de?i?iklik",
+      "gold_article_ids": [
+        "kvkk-verbis-yonetmeligi:13"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-verbis-yonetmeligi:7",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:7",
+        "kvkk-verbis-yonetmeligi:9",
+        "kvkk-verbis-yonetmeligi:5",
+        "kvkk-verbis-yonetmeligi:12"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 0.0,
+      "mrr@3": 0.0,
+      "ndcg@3": 0.0,
+      "recall@5": 0.0,
+      "mrr@5": 0.0,
+      "ndcg@5": 0.0
+    },
+    {
+      "question_id": "KVKK-080",
+      "question": "Kay?t y?k?ml?l???n? gerektiren faaliyet sona ererse sicil kayd? ve ge?mi? y?k?ml?l?kler ne olur?",
+      "reference_answer": "Kayıt yükümlüğünü gerektiren faaliyet sona erer ya da ortadan kalkarsa, sicil kaydı silinir. Bu kayıtlar, istendiğinde erişilebilir olmakla birlikte üzerinde herhangi bir değişiklik yapılamayacak şekilde tutulur.",
+      "source_urls": [
+        "https://www.kvkk.gov.tr/Icerik/5442/VERI-SORUMLULARI-SICILI-HAKKINDA-YONETMELIK"
+      ],
+      "category": "Sicil kayd?n?n silinmesi",
+      "gold_article_ids": [
+        "kvkk-verbis-yonetmeligi:14"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-verbis-yonetmeligi:14",
+        "kvkk-6698:7",
+        "kvkk-rehber-ozel-nitelikli-veriler:Bölüm 5",
+        "kvkk-6698:21",
+        "kvkk-silme-yonetmeligi:6"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 1.0,
+      "mrr@1": 1.0,
+      "ndcg@1": 1.0,
+      "recall@3": 1.0,
+      "mrr@3": 1.0,
+      "ndcg@3": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@5": 1.0
+    },
+    {
+      "question_id": "KVKK-081",
+      "question": "Y?netmelikte Sicile kay?t ve bildirim y?k?ml?l??? i?in hangi istisna h?lleri say?lm??t?r?",
+      "reference_answer": "Aşağıda belirtilen kişisel veri işleme faaliyetleri bakımından veri sorumlusunun bu faaliyetleri Sicile kayıt etmesi ve bildirmesi yükümlülüğü yoktur:\n\na) Kişisel veri işlemenin suç işlenmesinin önlenmesi veya suç soruşturması için gerekli olması.\n\nb) İlgili kişinin kendisi tarafından alenileştirilmiş kişisel verilerin işlenmesi.\n\nc) Kişisel veri işlemenin kanunun verdiği yetkiye dayanılarak görevli ve yetkili kamu kurum ve kuruluşları ile kamu kurumu niteliğindeki meslek kuruluşlarınca, denetleme veya düzenleme görevlerinin yürütülmesi ile disiplin soruşturma veya kovuşturması için gerekli olması.\n\nç) Kişisel veri işlemenin bütçe, vergi ve mali konulara ilişkin olarak Devletin ekonomik ve mali çıkarlarının korunması için gerekli olması.",
+      "source_urls": [
+        "https://www.kvkk.gov.tr/Icerik/5442/VERI-SORUMLULARI-SICILI-HAKKINDA-YONETMELIK"
+      ],
+      "category": "Kay?t istisnalar?",
+      "gold_article_ids": [
+        "kvkk-verbis-yonetmeligi:15"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-verbis-yonetmeligi:7",
+        "kvkk-rehber-yurt-disi-aktarim:Bölüm 12",
+        "kvkk-verbis-yonetmeligi:17",
+        "kvkk-verbis-yonetmeligi:9",
+        "kvkk-6698:16"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 0.0,
+      "mrr@1": 0.0,
+      "ndcg@1": 0.0,
+      "recall@3": 0.0,
+      "mrr@3": 0.0,
+      "ndcg@3": 0.0,
+      "recall@5": 0.0,
+      "mrr@5": 0.0,
+      "ndcg@5": 0.0
+    },
+    {
+      "question_id": "KVKK-082",
+      "question": "Kurul kay?t y?k?ml?l???ne istisna tan?rken hangi kriterleri dikkate alabilir?",
+      "reference_answer": "Kurul, aşağıdaki kriterleri göz önünde bulundurarak kayıt yükümlülüğüne istisna getirebilir:\n\na) Kişisel verinin niteliği.\n\nb) Kişisel verinin sayısı.\n\nc) Kişisel verinin işlenme amacı.\n\nç) Kişisel verinin işlendiği faaliyet alanı.\n\nd) Kişisel verinin üçüncü kişilere aktarılma durumu.\n\ne) Kişisel veri işleme faaliyetinin kanunlardan kaynaklanması.\n\nf) Kişisel verilerin muhafaza edilmesi süresi.\n\ng) Veri konusu kişi grubu veya veri kategorileri.\n\nğ) (Ek:RG-28/4/2019-30758)Veri sorumlusunun yıllık çalışan sayısı veya yıllık mali bilanço toplamı bilgisi.",
+      "source_urls": [
+        "https://www.kvkk.gov.tr/Icerik/5442/VERI-SORUMLULARI-SICILI-HAKKINDA-YONETMELIK"
+      ],
+      "category": "?stisna kriterleri",
+      "gold_article_ids": [
+        "kvkk-verbis-yonetmeligi:16"
+      ],
+      "retrieved_article_ids": [
+        "kvkk-verbis-yonetmeligi:16",
+        "kvkk-rehber-yurt-disi-aktarim:Bölüm 4",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:9",
+        "kvkk-6698:15",
+        "kvkk-yurtdisi-aktarim-yonetmeligi:8"
+      ],
+      "answer": null,
+      "latency_ms": null,
+      "citations": [],
+      "verification_status": "not_run",
+      "recall@1": 1.0,
+      "mrr@1": 1.0,
+      "ndcg@1": 1.0,
+      "recall@3": 1.0,
+      "mrr@3": 1.0,
+      "ndcg@3": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@5": 1.0
+    }
+  ]
+}

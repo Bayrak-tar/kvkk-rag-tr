@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="360" viewBox="0 0 980 360">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:Arial,sans-serif;fill:#172033}.label{font-size:13px}.title{font-size:18px;font-weight:bold}</style>
+<text x="24" y="28" class="title">Retrieval deneyleri — metrikler 0–1</text>
+<rect x="250" y="36" width="12" height="12" fill="#276EF1"/>
+<text x="268" y="47" class="label">recall@5</text>
+<rect x="410" y="36" width="12" height="12" fill="#11A683"/>
+<text x="428" y="47" class="label">mrr@5</text>
+<rect x="570" y="36" width="12" height="12" fill="#F2A900"/>
+<text x="588" y="47" class="label">ndcg@5</text>
+<text x="20" y="65.0" class="label">pilot-draft-bm25-e5-article</text>
+<rect x="250" y="45.0" width="439.51" height="10" rx="3" fill="#276EF1"/>
+<text x="695.5" y="54.0" class="label">0.646</text>
+<rect x="250" y="60.0" width="291.90" height="10" rx="3" fill="#11A683"/>
+<text x="547.9" y="69.0" class="label">0.429</text>
+<rect x="250" y="75.0" width="328.25" height="10" rx="3" fill="#F2A900"/>
+<text x="584.3" y="84.0" class="label">0.483</text>
+<text x="20" y="158.3" class="label">pilot-draft-hybrid-e5-article</text>
+<rect x="250" y="138.3" width="516.91" height="10" rx="3" fill="#276EF1"/>
+<text x="772.9" y="147.3" class="label">0.760</text>
+<rect x="250" y="153.3" width="368.33" height="10" rx="3" fill="#11A683"/>
+<text x="624.3" y="162.3" class="label">0.542</text>
+<rect x="250" y="168.3" width="403.99" height="10" rx="3" fill="#F2A900"/>
+<text x="660.0" y="177.3" class="label">0.594</text>
+<text x="20" y="251.7" class="label">pilot-draft-vector-e5-article</text>
+<rect x="250" y="231.7" width="458.86" height="10" rx="3" fill="#276EF1"/>
+<text x="714.9" y="240.7" class="label">0.675</text>
+<rect x="250" y="246.7" width="333.92" height="10" rx="3" fill="#11A683"/>
+<text x="589.9" y="255.7" class="label">0.491</text>
+<rect x="250" y="261.7" width="362.33" height="10" rx="3" fill="#F2A900"/>
+<text x="618.3" y="270.7" class="label">0.533</text>
+</svg>

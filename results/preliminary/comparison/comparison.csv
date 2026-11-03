@@ -1,0 +1,4 @@
+﻿experiment_id,strategy,embedding_model,chunking_strategy,recall@5,mrr@5,ndcg@5
+pilot-draft-bm25-e5-article,bm25,none,article,0.6463414634146342,0.4292682926829269,0.48272614602427716
+pilot-draft-hybrid-e5-article,hybrid,intfloat/multilingual-e5-base,article,0.7601626016260163,0.5416666666666666,0.5941066498476335
+pilot-draft-vector-e5-article,vector,intfloat/multilingual-e5-base,article,0.6747967479674797,0.49105691056910566,0.5328448421988062

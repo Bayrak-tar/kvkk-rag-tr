@@ -71,6 +71,15 @@ python -m src.generation.cli "İlgili kişinin hakları nelerdir?" --config conf
 
 İlk ingestion resmî kaynaklardan indirme yapar; ağa çıkmadan daha önce indirilmiş ham dosyaları yeniden işlemek için `--offline` kullanın. İlk embedding çalıştırması model ağırlıklarını Hugging Face'den indirir. Varsayılan üretici Ollama'dır (`configs/generation.json`); modelin Ollama'da kurulu ve servisinin çalışır olması gerekir. OpenAI uyumlu sağlayıcıya geçerken config'teki provider/base URL'yi güncelleyin ve gerçek anahtarı `.env` içindeki `OPENAI_API_KEY` alanına koyun. `.env` ve yerel veri/indeks dosyaları Git dışında tutulur.
 
+Varsayılan yerel LLM `qwen3:8b` modelidir. Ollama uygulamasını çalıştırın ve modeli bir kez indirin:
+
+```powershell
+ollama pull qwen3:8b
+ollama list
+```
+
+`ollama list` çıktısında `qwen3:8b` görünmeli; Windows'ta Ollama uygulaması açıkken servis arka planda çalışır.
+
 ### API ve arayüz
 
 İki terminal açıp API ile Gradio'yu çalıştırın:
@@ -123,7 +132,7 @@ Embedding modelini karşılaştırmak için aynı retrieval ayarıyla `configs/r
 
 ### Demo görüntüsü
 
-![KVKK RAG arayüzünde örnek soru, yanıt ve mevzuat dayanakları.](docs/images/demo-pending.png)
+![KVKK RAG arayüzünde örnek soru, yanıt ve mevzuat dayanakları.](docs/images/demo.png)
 
 
 ## Türkçe'de arama neden zor?
@@ -137,7 +146,7 @@ Türkçe sondan eklemeli bir dildir: tek bir kök, hâl ve iyelik ekleriyle çok
 - multilingual-e5-base, BM25 ve hibrit retrieval için 82 taslak soruda keşifsel pilot alındı; reranker ve LLM cevap metriği henüz alınmadı.
 - Kaynak destek denetimi üreticiyle aynı LLM'i kullanır; bağımsız bir doğrulama değildir ve yanlış kabul/ret kararı verebilir. Otomatik kontrolden geçmesi doğruluk garantisi oluşturmaz; resmi mevzuat metni ve insan incelemesi gerekir.
 - Zemberek veya başka morfolojik analiz eklenmedi; mevcut lexical baseline yalnız Unicode tokenizasyonu ve Türkçe `I/İ` normalizasyonu kullanır.
-- Sonraki çalışmalar: soru setini uzmanla doğrulama, karar/rehber kaynaklarını lisans ve erişim koşullarını kontrol ederek ekleme, tüm chunking/embedding kombinasyonlarını deney config'leriyle çalıştırma, morfolojik ön işlemeyi ölçme, hata analizinden sonra retrieval/prompt iyileştirme ve demo ekran görüntüsünü gerçek çalıştırmadan alma.
+- Sonraki çalışmalar: soru setini uzmanla doğrulama, karar/rehber kaynaklarını lisans ve erişim koşullarını kontrol ederek ekleme, tüm chunking/embedding kombinasyonlarını deney config'leriyle çalıştırma, morfolojik ön işlemeyi ölçme ve hata analizinden sonra retrieval/prompt iyileştirme.
 
 ## Geliştirme ve test
 
